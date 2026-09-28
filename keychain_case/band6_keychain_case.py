@@ -1,0 +1,116 @@
+"""HUAWEI Band 6 keychain case (no strap mounts, flat ends, keyring loop).
+
+Fit geometry is measured directly from the proven Band 6 frame
+"22mm adapter for Huawei band 6 and Honor band 6" by M7md_says_hello
+(https://www.thingiverse.com/thing:6260208, CC BY-SA): same 25.38 mm cavity,
+1.0 mm side walls, curved screen-side edge, button opening, and the two
+internal tongues that clip into the watch's own strap slots and hold it in.
+The 22 mm spring-bar ears are removed and the ends closed flat.
+This derivative is shared under the same CC BY-SA license.
+
+Axes: X = width, Y = thickness (Y=0 is the flat wrist/back side -> print
+this face down, no supports), Z = length.
+Run:  python3 band6_keychain_case.py
+"""
+import cadquery as cq
+
+# ---- measured from the reference (mm) ------------------------------------
+CAV_W = 25.38         # inner width between side walls
+CAV_L = 42.60         # inner length between end blocks
+WALL = 1.00           # side wall thickness
+END_L = 24.75         # half-length to the outer end face (flat ends)
+TOP = [               # screen-side edge height vs |z| (flat 9.4 mid-section)
+    (0.0, 9.40), (11.8, 9.40), (13.3, 9.37), (15.2, 9.24), (17.2, 8.90),
+    (19.2, 8.40), (20.5, 7.95), (21.7, 7.40), (22.7, 6.85), (23.7, 6.20),
+    (END_L, 5.50)]
+CAV_R = 1.2           # cavity corner radius (front view)
+OUT_R = 2.0           # outer corner radius (front view)
+
+# strap-slot tongue at each end: pocket under it + two small latch notches
+POCKET_W = 14.70      # pocket width (|x| < 7.35)
+POCKET_H = 5.30       # pocket height from the back face (tongue underside)
+POCKET_D = 2.50       # pocket depth into the end block
+NOTCH_X = (6.50, 8.50)
+NOTCH_Y = (4.62, 6.62)
+NOTCH_D = 0.50
+
+# side button opening (+X wall)
+BTN_Z = (-5.00, 6.13)
+BTN_Y = (1.87, 7.56)
+BTN_R = 1.0
+
+CLEAR = 0.0           # extra gap per side; reference fit is 0 (snug)
+
+# ---- keyring loop (+Z end) -------------------------------------------------
+RING_OD = 9.0
+RING_ID = 4.6
+RING_T = 3.5          # loop thickness from the back face
+RING_BASE = 22.0      # width where the loop meets the end of the case
+
+# ----------------------------------------------------------------------------
+cw, cl = CAV_W + 2 * CLEAR, CAV_L + 2 * CLEAR
+ow = cw + 2 * WALL
+
+
+def rrect(w, l, r, h):
+    """Rounded rectangle in XZ, extruded from Y=0 to Y=h."""
+    return (cq.Workplane("XZ").sketch().rect(w, l).vertices().fillet(r)
+            .finalize().extrude(-h))
+
+
+# side profile (YZ plane: local x = world Y, local y = world Z):
+# flat back, curved screen-side edge
+top = [(y, -z) for z, y in reversed(TOP)] + [(y, z) for z, y in TOP[1:]]
+profile = (cq.Workplane("YZ").moveTo(0, -END_L).lineTo(*top[0])
+           .spline(top[1:], includeCurrent=True)
+           .lineTo(0, END_L).close().extrude(ow / 2 + 1, both=True))
+body = rrect(ow, 2 * END_L, OUT_R, 10).intersect(profile)
+
+# cavity through the whole thickness
+body = body.cut(rrect(cw, cl, CAV_R, 12).translate((0, -1, 0)))
+
+for s in (1, -1):
+    zin = s * cl / 2
+    # pocket under the tongue (open to the back face)
+    body = body.cut(cq.Workplane("XY").box(POCKET_W, POCKET_H + 1, POCKET_D)
+                    .translate((0, (POCKET_H - 1) / 2, zin + s * POCKET_D / 2)))
+    # latch notches on the tongue
+    for sx in (1, -1):
+        nx = sx * (NOTCH_X[0] + NOTCH_X[1]) / 2
+        body = body.cut(cq.Workplane("XY")
+                        .box(NOTCH_X[1] - NOTCH_X[0], NOTCH_Y[1] - NOTCH_Y[0],
+                             NOTCH_D + 0.2)
+                        .translate((nx, sum(NOTCH_Y) / 2,
+                                    zin + s * (NOTCH_D - 0.2) / 2)))
+
+# button opening in the +X wall
+btn = (cq.Workplane("YZ").sketch()
+       .rect(BTN_Y[1] - BTN_Y[0], BTN_Z[1] - BTN_Z[0]).vertices().fillet(BTN_R)
+       .finalize().extrude(3 * WALL, both=True)
+       .translate((cw / 2 + WALL / 2, sum(BTN_Y) / 2, sum(BTN_Z) / 2)))
+body = body.cut(btn)
+
+# keyring loop on the +Z end, flush with the back face. Its base is a wide
+# gusset so the pull goes into the solid end-block corners, not only the
+# thin plate in front of the tongue pocket.
+rc = END_L + RING_OD / 2 + 1.0
+loop = (cq.Workplane("XZ").center(0, rc).circle(RING_OD / 2).extrude(-RING_T)
+        .union(cq.Workplane("XZ")
+               .polyline([(-RING_BASE / 2, END_L - 0.5), (RING_BASE / 2, END_L - 0.5),
+                          (RING_OD / 2, rc), (-RING_OD / 2, rc)]).close()
+               .extrude(-RING_T)))
+loop = loop.cut(cq.Workplane("XZ").center(0, rc).circle(RING_ID / 2)
+                .extrude(-RING_T - 2).translate((0, -1, 0)))
+loop = loop.cut(rrect(cw, cl + 2 * POCKET_D, CAV_R, 12).translate((0, -1, 0)))
+case = body.union(loop)
+
+if __name__ == "__main__":
+    import os
+    here = os.path.dirname(os.path.abspath(__file__))
+    cq.exporters.export(case, os.path.join(here, "band6_keychain_case.step"))
+    cq.exporters.export(case, os.path.join(here, "band6_keychain_case.stl"),
+                        tolerance=0.01, angularTolerance=0.1)
+    bb = case.val().BoundingBox()
+    print(f"valid={case.val().isValid()}  size X{bb.xlen:.2f} Y{bb.ylen:.2f} "
+          f"Z{bb.zlen:.2f}  bbox Z[{bb.zmin:.2f},{bb.zmax:.2f}] "
+          f"Y[{bb.ymin:.2f},{bb.ymax:.2f}]")
