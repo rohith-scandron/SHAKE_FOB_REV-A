@@ -1,0 +1,6063 @@
+(export
+	(version "E")
+	(design
+		(source "C:\\Users\\Admin\\Documents\\KiCad\\SHAKE_FOB_REV-A\\ESP32_C3_FOB\\ESP32_C3_FOB.kicad_sch")
+		(date "2026-09-23T23:34:58")
+		(tool "Eeschema 10.0.4")
+		(sheet
+			(number "1")
+			(name "/")
+			(tstamps "/")
+			(title_block
+				(title)
+				(company)
+				(rev)
+				(date)
+				(source "ESP32_C3_FOB.kicad_sch")
+				(comment
+					(number "1")
+					(value "")
+				)
+				(comment
+					(number "2")
+					(value "")
+				)
+				(comment
+					(number "3")
+					(value "")
+				)
+				(comment
+					(number "4")
+					(value "")
+				)
+				(comment
+					(number "5")
+					(value "")
+				)
+				(comment
+					(number "6")
+					(value "")
+				)
+				(comment
+					(number "7")
+					(value "")
+				)
+				(comment
+					(number "8")
+					(value "")
+				)
+				(comment
+					(number "9")
+					(value "")
+				)
+			)
+		)
+	)
+	(components
+		(comp
+			(ref "AE1")
+			(value "2.45 GHz")
+			(footprint "lcsc_footprints:C89334_ANT-SMD_L3_2-W1_6")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_1810010413_Johanson-Dielectrics-2450AT18A100E_C89334.pdf")
+			(description "Mini 2.45 GHz Antenna, Johanson Technology")
+			(fields
+				(field
+					(name "LCSC") "C89334")
+				(field
+					(name "Manufacturer") "JOHANSON(约翰逊)")
+				(field
+					(name "Footprint") "lcsc_footprints:C89334_ANT-SMD_L3_2-W1_6")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1810010413_Johanson-Dielectrics-2450AT18A100E_C89334.pdf")
+				(field
+					(name "Description") "Mini 2.45 GHz Antenna, Johanson Technology")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "Mini_2_45_GHz_Antenna,_Johanson_Technology")
+				(description "Mini 2.45 GHz Antenna, Johanson Technology")
+			)
+			(property
+				(name "LCSC")
+				(value "C89334")
+			)
+			(property
+				(name "Manufacturer")
+				(value "JOHANSON(约翰逊)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "91ce67a0-7b38-491a-ad7a-ce99c529e7cd")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C1")
+			(value "10uF")
+			(footprint "lcsc_footprints:C15525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+			(description "10uF (106) ±20% 6.3V")
+			(fields
+				(field
+					(name "LCSC") "C15525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C15525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+				(field
+					(name "Description") "10uF (106) ±20% 6.3V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10uF_(106)_±20%_6_3V")
+				(description "10uF (106) ±20% 6.3V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "862e86ae-f0ff-492a-8bc5-c7294d3bcc40")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C2")
+			(value "10uF")
+			(footprint "lcsc_footprints:C15525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+			(description "10uF (106) ±20% 6.3V")
+			(fields
+				(field
+					(name "LCSC") "C15525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C15525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+				(field
+					(name "Description") "10uF (106) ±20% 6.3V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10uF_(106)_±20%_6_3V")
+				(description "10uF (106) ±20% 6.3V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "abc53623-da16-48ff-8b96-f6e4b399f6e6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C3")
+			(value "1uF")
+			(footprint "lcsc_footprints:C52923_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(description "1uF (105) ±10% 25V")
+			(fields
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1uF_(105)_±10%_25V")
+				(description "1uF (105) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C52923")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0037753e-8a06-4e5a-b4c8-6acd6bd6653d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C4")
+			(value "1uF")
+			(footprint "lcsc_footprints:C52923_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(description "1uF (105) ±10% 25V")
+			(fields
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1uF_(105)_±10%_25V")
+				(description "1uF (105) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C52923")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a12e81fe-07df-4d41-bf27-3233c0248317")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C5")
+			(value "1uF")
+			(footprint "lcsc_footprints:C52923_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(description "1uF (105) ±10% 25V")
+			(fields
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1uF_(105)_±10%_25V")
+				(description "1uF (105) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C52923")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8dc3a788-a296-4113-9b81-ba0175d21787")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C6")
+			(value "1uF")
+			(footprint "lcsc_footprints:C52923_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(description "1uF (105) ±10% 25V")
+			(fields
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1uF_(105)_±10%_25V")
+				(description "1uF (105) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C52923")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9569f370-15fb-4bec-97f5-813740b31ff2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C7")
+			(value "100nF")
+			(footprint "lcsc_footprints:C1525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(description "100nF (104) ±10% 16V")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "100nF_(104)_±10%_16V")
+				(description "100nF (104) ±10% 16V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fa499d6b-b4a1-4307-aa10-71d1176a16e8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C8")
+			(value "100nF")
+			(footprint "lcsc_footprints:C1525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(description "100nF (104) ±10% 16V")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "100nF_(104)_±10%_16V")
+				(description "100nF (104) ±10% 16V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4e345115-40fa-40f4-9773-06be25f2aca1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C9")
+			(value "10uF")
+			(footprint "lcsc_footprints:C15525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+			(description "10uF (106) ±20% 6.3V")
+			(fields
+				(field
+					(name "LCSC") "C15525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C15525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+				(field
+					(name "Description") "10uF (106) ±20% 6.3V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10uF_(106)_±20%_6_3V")
+				(description "10uF (106) ±20% 6.3V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7c0e4993-61d6-48ec-9882-c4a61f7a4b1f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C10")
+			(value "100nF")
+			(footprint "lcsc_footprints:C1525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(description "100nF (104) ±10% 16V")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "100nF_(104)_±10%_16V")
+				(description "100nF (104) ±10% 16V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ddbb1642-e546-4b89-92c9-c1a9a2a05263")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C11")
+			(value "1uF")
+			(footprint "lcsc_footprints:C52923_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(description "1uF (105) ±10% 25V")
+			(fields
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1uF_(105)_±10%_25V")
+				(description "1uF (105) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C52923")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "52b7a3e9-f569-4f84-97e5-0a0737fe6b87")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C12")
+			(value "18pF")
+			(footprint "lcsc_footprints:C1549_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf")
+			(description "18pF (180) ±5% 50V")
+			(fields
+				(field
+					(name "LCSC") "C1549")
+				(field
+					(name "Manufacturer") "FH(风华)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1549_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf")
+				(field
+					(name "Description") "18pF (180) ±5% 50V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "18pF_(180)_±5%_50V")
+				(description "18pF (180) ±5% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1549")
+			)
+			(property
+				(name "Manufacturer")
+				(value "FH(风华)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "08865922-9f78-4ff9-ab44-0742f4958d76")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C13")
+			(value "18pF")
+			(footprint "lcsc_footprints:C1549_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf")
+			(description "18pF (180) ±5% 50V")
+			(fields
+				(field
+					(name "LCSC") "C1549")
+				(field
+					(name "Manufacturer") "FH(风华)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1549_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf")
+				(field
+					(name "Description") "18pF (180) ±5% 50V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "18pF_(180)_±5%_50V")
+				(description "18pF (180) ±5% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1549")
+			)
+			(property
+				(name "Manufacturer")
+				(value "FH(风华)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "2ab71b06-6fa4-451f-9156-505d19383228")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C14")
+			(value "1.5pF")
+			(footprint "lcsc_footprints:C1552_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf")
+			(description "1.5pF (1R5) ±0.25pF 50V")
+			(fields
+				(field
+					(name "LCSC") "C1552")
+				(field
+					(name "Manufacturer") "FH(风华)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1552_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf")
+				(field
+					(name "Description") "1.5pF (1R5) ±0.25pF 50V")
+			)
+			(libsource
+				(lib "lcsc_imported_FOB")
+				(part "1_5pF_(1R5)_±0_25pF_50V")
+				(description "1.5pF (1R5) ±0.25pF 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1552")
+			)
+			(property
+				(name "Manufacturer")
+				(value "FH(风华)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0491ece6-566e-4f11-b93f-c1701577f5d3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C15")
+			(value "1.5pF")
+			(footprint "lcsc_footprints:C1552_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf")
+			(description "1.5pF (1R5) ±0.25pF 50V")
+			(fields
+				(field
+					(name "LCSC") "C1552")
+				(field
+					(name "Manufacturer") "FH(风华)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1552_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf")
+				(field
+					(name "Description") "1.5pF (1R5) ±0.25pF 50V")
+			)
+			(libsource
+				(lib "lcsc_imported_FOB")
+				(part "1_5pF_(1R5)_±0_25pF_50V")
+				(description "1.5pF (1R5) ±0.25pF 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1552")
+			)
+			(property
+				(name "Manufacturer")
+				(value "FH(风华)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d69c4b97-3888-4e86-a2a2-269ffd7af55b")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C16")
+			(value "100nF")
+			(footprint "lcsc_footprints:C1525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(description "100nF (104) ±10% 16V")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "100nF_(104)_±10%_16V")
+				(description "100nF (104) ±10% 16V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "aba2b3a0-c485-4706-8059-fed9057a42c9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C17")
+			(value "100nF")
+			(footprint "lcsc_footprints:C1525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(description "100nF (104) ±10% 16V")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "100nF_(104)_±10%_16V")
+				(description "100nF (104) ±10% 16V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "f72e1ea9-8c48-498e-b9e0-2dbeb123f691")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C18")
+			(value "10uF")
+			(footprint "lcsc_footprints:C15525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+			(description "10uF (106) ±20% 6.3V")
+			(fields
+				(field
+					(name "LCSC") "C15525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C15525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+				(field
+					(name "Description") "10uF (106) ±20% 6.3V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10uF_(106)_±20%_6_3V")
+				(description "10uF (106) ±20% 6.3V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8cbc9af8-a357-479d-9134-01c05031371d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C19")
+			(value "100nF")
+			(footprint "lcsc_footprints:C1525_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(description "100nF (104) ±10% 16V")
+			(fields
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "100nF_(104)_±10%_16V")
+				(description "100nF (104) ±10% 16V")
+			)
+			(property
+				(name "LCSC")
+				(value "C1525")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "410ce4cf-4f93-4ef7-a10e-39ebc4db0fbc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C20")
+			(value "1uF")
+			(footprint "lcsc_footprints:C52923_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(description "1uF (105) ±10% 25V")
+			(fields
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1uF_(105)_±10%_25V")
+				(description "1uF (105) ±10% 25V")
+			)
+			(property
+				(name "LCSC")
+				(value "C52923")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8d848996-ee30-462d-bcdc-1e0b099a02c2")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C21")
+			(value "10nF")
+			(footprint "lcsc_footprints:C15195_C0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B103KB5NNNC_C15195.pdf")
+			(description "10nF (103) ±10% 50V")
+			(fields
+				(field
+					(name "LCSC") "C15195")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+				(field
+					(name "Footprint") "lcsc_footprints:C15195_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B103KB5NNNC_C15195.pdf")
+				(field
+					(name "Description") "10nF (103) ±10% 50V")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10nF_(103)_±10%_50V")
+				(description "10nF (103) ±10% 50V")
+			)
+			(property
+				(name "LCSC")
+				(value "C15195")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SAMSUNG(三星)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "4f04d5ef-fc2d-4324-8e68-4dab55cb0d89")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D1")
+			(value "USBLC6-2SC6")
+			(footprint "lcsc_footprints:C7519_SOT-23-6_L2_9-W1_6-P0_95-LS2_8-BL")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf")
+			(description "USBLC6-2SC6")
+			(fields
+				(field
+					(name "LCSC") "C7519")
+				(field
+					(name "Manufacturer") "ST(意法半导体)")
+				(field
+					(name "Footprint") "lcsc_footprints:C7519_SOT-23-6_L2_9-W1_6-P0_95-LS2_8-BL")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf")
+				(field
+					(name "Description") "USBLC6-2SC6")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "USBLC6-2SC6")
+				(description "USBLC6-2SC6")
+			)
+			(property
+				(name "LCSC")
+				(value "C7519")
+			)
+			(property
+				(name "Manufacturer")
+				(value "ST(意法半导体)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cedd7045-dd9a-4149-9068-8eb556c2556c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "D2")
+			(value "1N4148WS T4")
+			(footprint "lcsc_footprints:C2128_SOD-323_L1_8-W1_3-LS2_5-RD")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101110_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--1N4148WS_C2128.pdf")
+			(description "1N4148WS T4")
+			(fields
+				(field
+					(name "LCSC") "C2128")
+				(field
+					(name "Manufacturer") "CJ(江苏长电/长晶)")
+				(field
+					(name "Footprint") "lcsc_footprints:C2128_SOD-323_L1_8-W1_3-LS2_5-RD")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101110_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--1N4148WS_C2128.pdf")
+				(field
+					(name "Description") "1N4148WS T4")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1N4148WS_T4")
+				(description "1N4148WS T4")
+			)
+			(property
+				(name "LCSC")
+				(value "C2128")
+			)
+			(property
+				(name "Manufacturer")
+				(value "CJ(江苏长电/长晶)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "c4ce9924-d88e-430d-840b-a2196e9011af")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L3")
+			(value "2.2nH")
+			(footprint "lcsc_footprints:C27122_L0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2310301641_Sunlord-SDCL1005C2N2STDF_C27122.pdf")
+			(description "2.2nH ±0.3nH")
+			(fields
+				(field
+					(name "LCSC") "C27122")
+				(field
+					(name "Manufacturer") "Sunlord(顺络)")
+				(field
+					(name "Footprint") "lcsc_footprints:C27122_L0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2310301641_Sunlord-SDCL1005C2N2STDF_C27122.pdf")
+				(field
+					(name "Description") "2.2nH ±0.3nH")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "2_2nH_±0_3nH")
+				(description "2.2nH ±0.3nH")
+			)
+			(property
+				(name "LCSC")
+				(value "C27122")
+			)
+			(property
+				(name "Manufacturer")
+				(value "Sunlord(顺络)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b4acae11-d306-484e-8690-c435c6d7263c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "LED1")
+			(value "LED  0402")
+			(footprint "lcsc_footprints:C71911_LED0402-R-RD")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151119_Everlight-Elec-16-213SDRC-S530-A3-TR8_C71911.pdf")
+			(description "LED  0402")
+			(fields
+				(field
+					(name "LCSC") "C71911")
+				(field
+					(name "Manufacturer") "EVERLIGHT(亿光)")
+				(field
+					(name "Footprint") "lcsc_footprints:C71911_LED0402-R-RD")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151119_Everlight-Elec-16-213SDRC-S530-A3-TR8_C71911.pdf")
+				(field
+					(name "Description") "LED  0402")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "LED__0402")
+				(description "LED  0402")
+			)
+			(property
+				(name "LCSC")
+				(value "C71911")
+			)
+			(property
+				(name "Manufacturer")
+				(value "EVERLIGHT(亿光)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cf4536a5-cc79-44a3-bc30-2a549ad56a4e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "Q1")
+			(value "AO3401A")
+			(footprint "lcsc_footprints:C15127_SOT-23_L2_9-W1_3-P1_90-LS2_4-BR")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf")
+			(description "AO3401A")
+			(fields
+				(field
+					(name "LCSC") "C15127")
+				(field
+					(name "Manufacturer") "AOS")
+				(field
+					(name "Footprint") "lcsc_footprints:C15127_SOT-23_L2_9-W1_3-P1_90-LS2_4-BR")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf")
+				(field
+					(name "Description") "AO3401A")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "AO3401A")
+				(description "AO3401A")
+			)
+			(property
+				(name "LCSC")
+				(value "C15127")
+			)
+			(property
+				(name "Manufacturer")
+				(value "AOS")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "806ed4ff-30fe-4434-9aa6-ea07abf21801")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R1")
+			(value "5.1k")
+			(footprint "lcsc_footprints:C25905_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf")
+			(description "5.1KΩ (5101) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25905")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25905_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf")
+				(field
+					(name "Description") "5.1KΩ (5101) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported_GPS")
+				(part "5_1KΩ_(5101)_±1%")
+				(description "5.1KΩ (5101) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25905")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "85adbad5-4b26-4fe2-9fdc-85060aa56933")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R2")
+			(value "5.1k")
+			(footprint "lcsc_footprints:C25905_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf")
+			(description "5.1KΩ (5101) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25905")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25905_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf")
+				(field
+					(name "Description") "5.1KΩ (5101) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported_GPS")
+				(part "5_1KΩ_(5101)_±1%")
+				(description "5.1KΩ (5101) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25905")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "0c8a0b4a-7425-428b-ab03-b58d54340c07")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R3")
+			(value "22Ω (22R0) ±1%")
+			(footprint "lcsc_footprints:C25092_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf")
+			(description "22Ω (22R0) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25092")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25092_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf")
+				(field
+					(name "Description") "22Ω (22R0) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "22Ω_(22R0)_±1%")
+				(description "22Ω (22R0) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25092")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8e873ce0-5fb3-4a51-9b94-4b63a097ec35")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R4")
+			(value "22Ω (22R0) ±1%")
+			(footprint "lcsc_footprints:C25092_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf")
+			(description "22Ω (22R0) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25092")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25092_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf")
+				(field
+					(name "Description") "22Ω (22R0) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "22Ω_(22R0)_±1%")
+				(description "22Ω (22R0) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25092")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "b85b8ce4-4c9c-4715-8bd6-a8b6b2de26e8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R5")
+			(value "6.8K")
+			(footprint "lcsc_footprints:C25917_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF6801TCE_C25917.pdf")
+			(description "6.8KΩ (6801) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25917")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25917_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF6801TCE_C25917.pdf")
+				(field
+					(name "Description") "6.8KΩ (6801) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "6_8KΩ_(6801)_±1%")
+				(description "6.8KΩ (6801) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25917")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "9d3c7c51-4452-44e0-a727-3a517c9a447a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R6")
+			(value "1k")
+			(footprint "lcsc_footprints:C11702_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf")
+			(description "1KΩ (1001) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C11702")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C11702_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf")
+				(field
+					(name "Description") "1KΩ (1001) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported_GPS")
+				(part "1KΩ_(1001)_±1%")
+				(description "1KΩ (1001) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C11702")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "682ff93c-e2bc-4c12-83b7-472255bce02e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R7")
+			(value "10K")
+			(footprint "lcsc_footprints:C25744_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+			(description "10KΩ (1002) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25744")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25744_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+				(field
+					(name "Description") "10KΩ (1002) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10KΩ_(1002)_±1%")
+				(description "10KΩ (1002) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25744")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "6b528c53-d686-400b-9c7a-aea6f022a319")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R8")
+			(value "10K")
+			(footprint "lcsc_footprints:C25744_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+			(description "10KΩ (1002) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25744")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25744_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+				(field
+					(name "Description") "10KΩ (1002) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10KΩ_(1002)_±1%")
+				(description "10KΩ (1002) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25744")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "860fb0c5-7f35-4074-b8fb-842281d67ccc")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R9")
+			(value "10K")
+			(footprint "lcsc_footprints:C25744_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+			(description "10KΩ (1002) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25744")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25744_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+				(field
+					(name "Description") "10KΩ (1002) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10KΩ_(1002)_±1%")
+				(description "10KΩ (1002) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25744")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "62d8dd1a-cc83-4127-b08c-2547074987a3")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R11")
+			(value "4.7K")
+			(footprint "lcsc_footprints:C25900_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf")
+			(description "4.7KΩ (4701) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25900")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25900_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf")
+				(field
+					(name "Description") "4.7KΩ (4701) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "4_7KΩ_(4701)_±1%")
+				(description "4.7KΩ (4701) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25900")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fa9af6c1-ed7b-44c3-aaa1-6b17acb21096")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R12")
+			(value "4.7K")
+			(footprint "lcsc_footprints:C25900_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf")
+			(description "4.7KΩ (4701) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25900")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25900_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf")
+				(field
+					(name "Description") "4.7KΩ (4701) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "4_7KΩ_(4701)_±1%")
+				(description "4.7KΩ (4701) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25900")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "5fcf7ef8-9302-46d5-95b9-7f8e19ef8a62")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R13")
+			(value "10K")
+			(footprint "lcsc_footprints:C25744_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+			(description "10KΩ (1002) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25744")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25744_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+				(field
+					(name "Description") "10KΩ (1002) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10KΩ_(1002)_±1%")
+				(description "10KΩ (1002) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25744")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ca77fc56-8775-42b7-9206-edd75b75a617")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R14")
+			(value "10K")
+			(footprint "lcsc_footprints:C25744_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+			(description "10KΩ (1002) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C25744")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C25744_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+				(field
+					(name "Description") "10KΩ (1002) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "10KΩ_(1002)_±1%")
+				(description "10KΩ (1002) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C25744")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "1a223fc7-0499-441d-a153-41bb1fec355f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R15")
+			(value "1M")
+			(footprint "lcsc_footprints:C26083_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf")
+			(description "1MΩ (1004) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C26083")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C26083_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf")
+				(field
+					(name "Description") "1MΩ (1004) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1MΩ_(1004)_±1%")
+				(description "1MΩ (1004) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C26083")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ff1396cd-f6a2-4543-94ce-62849bdb2234")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R16")
+			(value "1M")
+			(footprint "lcsc_footprints:C26083_R0402")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf")
+			(description "1MΩ (1004) ±1%")
+			(fields
+				(field
+					(name "LCSC") "C26083")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+				(field
+					(name "Footprint") "lcsc_footprints:C26083_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf")
+				(field
+					(name "Description") "1MΩ (1004) ±1%")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "1MΩ_(1004)_±1%")
+				(description "1MΩ (1004) ±1%")
+			)
+			(property
+				(name "LCSC")
+				(value "C26083")
+			)
+			(property
+				(name "Manufacturer")
+				(value "UNI-ROYAL(厚声)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "deb69501-b4d4-495b-8121-fe770392d24f")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW1")
+			(value "TS342A2P")
+			(footprint "lcsc_footprints:C398055_SW-SMD_L4_0-W3_0-LS5_0-EH")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2404241539_SHOU-HAN-TS342A2P_C398055.pdf")
+			(description "TS342A2P")
+			(fields
+				(field
+					(name "LCSC") "C398055")
+				(field
+					(name "Manufacturer") "SHOU HAN(首韩)")
+				(field
+					(name "Footprint") "lcsc_footprints:C398055_SW-SMD_L4_0-W3_0-LS5_0-EH")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2404241539_SHOU-HAN-TS342A2P_C398055.pdf")
+				(field
+					(name "Description") "TS342A2P")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "TS342A2P")
+				(description "TS342A2P")
+			)
+			(property
+				(name "LCSC")
+				(value "C398055")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SHOU HAN(首韩)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "04360d7b-1389-4916-8be0-2f25ceacbb70")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "SW2")
+			(value "TS342A2P")
+			(footprint "lcsc_footprints:C398055_SW-SMD_L4_0-W3_0-LS5_0-EH")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2404241539_SHOU-HAN-TS342A2P_C398055.pdf")
+			(description "TS342A2P")
+			(fields
+				(field
+					(name "LCSC") "C398055")
+				(field
+					(name "Manufacturer") "SHOU HAN(首韩)")
+				(field
+					(name "Footprint") "lcsc_footprints:C398055_SW-SMD_L4_0-W3_0-LS5_0-EH")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2404241539_SHOU-HAN-TS342A2P_C398055.pdf")
+				(field
+					(name "Description") "TS342A2P")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "TS342A2P")
+				(description "TS342A2P")
+			)
+			(property
+				(name "LCSC")
+				(value "C398055")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SHOU HAN(首韩)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d46e2764-b3ea-49b0-aec0-6e1dd71ff743")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP1")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.5x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "bd840536-af1f-4e17-8704-9966ab46e776")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP2")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.5x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "dcd1338d-43c8-47db-88bb-07a729949840")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP3")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.5x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "85f3be54-4a95-4289-9da3-232535aceb09")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP4")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.5x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "cb3ffc56-f63c-4f4c-9d57-d309b1b8ad88")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP5")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.5x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "7c4c1146-17e9-44ad-b296-23c2bf12fc48")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "TP6")
+			(value "TestPoint")
+			(footprint "TestPoint:TestPoint_Pad_1.5x1.5mm")
+			(description "test point")
+			(fields
+				(field
+					(name "Footprint") "TestPoint:TestPoint_Pad_1.5x1.5mm")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(libsource
+				(lib "Connector")
+				(part "TestPoint")
+				(description "test point")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "test point tp")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "Pin* Test*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d5f9d986-b6b6-4f07-b0cf-602c9aa4bfc8")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U1")
+			(value "MCP73831T-2ACI/OT")
+			(footprint "lcsc_footprints:C424093_SOT-23-5_L3_0-W1_7-P0_95-LS2_8-BL")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Microchip-Tech-MCP73831T-2ACI-OT_C424093.pdf")
+			(description "MCP73831T-2ACI/OT")
+			(fields
+				(field
+					(name "LCSC") "C424093")
+				(field
+					(name "Manufacturer") "MICROCHIP(美国微芯)")
+				(field
+					(name "Footprint") "lcsc_footprints:C424093_SOT-23-5_L3_0-W1_7-P0_95-LS2_8-BL")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Microchip-Tech-MCP73831T-2ACI-OT_C424093.pdf")
+				(field
+					(name "Description") "MCP73831T-2ACI/OT")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "MCP73831T-2ACI/OT")
+				(description "MCP73831T-2ACI/OT")
+			)
+			(property
+				(name "LCSC")
+				(value "C424093")
+			)
+			(property
+				(name "Manufacturer")
+				(value "MICROCHIP(美国微芯)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "fd977a54-9f8c-4588-8e3a-b98d87434ace")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "4")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U2")
+			(value "XC6206P332MR")
+			(footprint "lcsc_footprints:C5446_SOT-23-3_L2_9-W1_6-P1_90-LS2_8-BR")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Torex-Semicon-XC6206P332MR-G_C5446.pdf")
+			(description "XC6206P332MR")
+			(fields
+				(field
+					(name "LCSC") "C5446")
+				(field
+					(name "Manufacturer") "TOREX(特瑞仕)")
+				(field
+					(name "Footprint") "lcsc_footprints:C5446_SOT-23-3_L2_9-W1_6-P1_90-LS2_8-BR")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Torex-Semicon-XC6206P332MR-G_C5446.pdf")
+				(field
+					(name "Description") "XC6206P332MR")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "XC6206P332MR")
+				(description "XC6206P332MR")
+			)
+			(property
+				(name "LCSC")
+				(value "C5446")
+			)
+			(property
+				(name "Manufacturer")
+				(value "TOREX(特瑞仕)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "512a35ac-e957-46fa-ae4d-6cad89d3ed6e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U3")
+			(value "ESP32-C3FH4")
+			(footprint "lcsc_footprints:C2858491_QFN-32_L5_0-W5_0-P0_50-TL-EP3_7")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2312201733_Espressif-Systems-ESP32-C3FH4_C2858491.pdf")
+			(description "ESP32-C3FH4")
+			(fields
+				(field
+					(name "LCSC") "C2858491")
+				(field
+					(name "Manufacturer") "ESPRESSIF(乐鑫)")
+				(field
+					(name "Footprint") "lcsc_footprints:C2858491_QFN-32_L5_0-W5_0-P0_50-TL-EP3_7")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2312201733_Espressif-Systems-ESP32-C3FH4_C2858491.pdf")
+				(field
+					(name "Description") "ESP32-C3FH4")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "ESP32-C3FH4")
+				(description "ESP32-C3FH4")
+			)
+			(property
+				(name "LCSC")
+				(value "C2858491")
+			)
+			(property
+				(name "Manufacturer")
+				(value "ESPRESSIF(乐鑫)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "13486948-d241-4d15-a3dd-e2def1abcb9d")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "9")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "33")
+						)
+						(pin
+							(num "32")
+						)
+						(pin
+							(num "31")
+						)
+						(pin
+							(num "30")
+						)
+						(pin
+							(num "29")
+						)
+						(pin
+							(num "28")
+						)
+						(pin
+							(num "27")
+						)
+						(pin
+							(num "26")
+						)
+						(pin
+							(num "25")
+						)
+						(pin
+							(num "24")
+						)
+						(pin
+							(num "23")
+						)
+						(pin
+							(num "22")
+						)
+						(pin
+							(num "21")
+						)
+						(pin
+							(num "20")
+						)
+						(pin
+							(num "19")
+						)
+						(pin
+							(num "18")
+						)
+						(pin
+							(num "17")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "U4")
+			(value "MMA8452QR1_C11360")
+			(footprint "lcsc_footprints:C11360_QFN-16_L3_0-W3_0-P0_50-TL_MMA8452QR1")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2405281404_NXP-Semicon-MMA8452QR1_C11360.pdf")
+			(description "MMA8452QR1_C11360")
+			(fields
+				(field
+					(name "LCSC") "C11360")
+				(field
+					(name "Manufacturer") "NXP(恩智浦)")
+				(field
+					(name "Footprint") "lcsc_footprints:C11360_QFN-16_L3_0-W3_0-P0_50-TL_MMA8452QR1")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2405281404_NXP-Semicon-MMA8452QR1_C11360.pdf")
+				(field
+					(name "Description") "MMA8452QR1_C11360")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "MMA8452QR1_C11360")
+				(description "MMA8452QR1_C11360")
+			)
+			(property
+				(name "LCSC")
+				(value "C11360")
+			)
+			(property
+				(name "Manufacturer")
+				(value "NXP(恩智浦)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "158b2d75-c224-4f72-884a-ebee9767a46e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
+						)
+						(pin
+							(num "6")
+						)
+						(pin
+							(num "7")
+						)
+						(pin
+							(num "8")
+						)
+						(pin
+							(num "16")
+						)
+						(pin
+							(num "15")
+						)
+						(pin
+							(num "14")
+						)
+						(pin
+							(num "13")
+						)
+						(pin
+							(num "12")
+						)
+						(pin
+							(num "11")
+						)
+						(pin
+							(num "10")
+						)
+						(pin
+							(num "9")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "USBC1")
+			(value "TYPE-C")
+			(footprint "lcsc_footprints:C165948_USB-C_SMD-TYPE-C-31-M-12_1")
+			(datasheet "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf")
+			(description "TYPE-C-31-M-12")
+			(fields
+				(field
+					(name "LCSC") "C165948")
+				(field
+					(name "Manufacturer") "韩国韩荣")
+				(field
+					(name "Footprint") "lcsc_footprints:C165948_USB-C_SMD-TYPE-C-31-M-12_1")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf")
+				(field
+					(name "Description") "TYPE-C-31-M-12")
+			)
+			(libsource
+				(lib "lcsc_imported_GPS")
+				(part "TYPE-C-31-M-12")
+				(description "TYPE-C-31-M-12")
+			)
+			(property
+				(name "LCSC")
+				(value "C165948")
+			)
+			(property
+				(name "Manufacturer")
+				(value "韩国韩荣")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "a29f5682-d595-4e8f-935a-a65f8fd4b20e")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "A1B12")
+						)
+						(pin
+							(num "A4B9")
+						)
+						(pin
+							(num "B8")
+						)
+						(pin
+							(num "A5")
+						)
+						(pin
+							(num "B7")
+						)
+						(pin
+							(num "A6")
+						)
+						(pin
+							(num "A7")
+						)
+						(pin
+							(num "B6")
+						)
+						(pin
+							(num "A8")
+						)
+						(pin
+							(num "B5")
+						)
+						(pin
+							(num "B4A9")
+						)
+						(pin
+							(num "B1A12")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "1")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "X1")
+			(value "3225 40M 12PF 10PPM")
+			(footprint "lcsc_footprints:C5380316_CRYSTAL-SMD_4P-L3_2-W2_5-BL")
+			(datasheet "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304071000_SST-3225-40M-12PF-10PPM_C5380316.pdf")
+			(description "3225 40M 12PF 10PPM")
+			(fields
+				(field
+					(name "LCSC") "C5380316")
+				(field
+					(name "Manufacturer") "SOSET(索斯特)")
+				(field
+					(name "Footprint") "lcsc_footprints:C5380316_CRYSTAL-SMD_4P-L3_2-W2_5-BL")
+				(field
+					(name "Datasheet") "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304071000_SST-3225-40M-12PF-10PPM_C5380316.pdf")
+				(field
+					(name "Description") "3225 40M 12PF 10PPM")
+			)
+			(libsource
+				(lib "lcsc_imported")
+				(part "3225_40M_12PF_10PPM")
+				(description "3225 40M 12PF 10PPM")
+			)
+			(property
+				(name "LCSC")
+				(value "C5380316")
+			)
+			(property
+				(name "Manufacturer")
+				(value "SOSET(索斯特)")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "ESP32_C3_FOB.kicad_sch")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "e3067038-0dbb-4ed7-853d-ebb4c050abe9")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "3")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+	)
+	(groups)
+	(variants)
+	(libparts
+		(libpart
+			(lib "Connector")
+			(part "TestPoint")
+			(description "test point")
+			(footprints
+				(fp "Pin*")
+				(fp "Test*")
+			)
+			(fields
+				(field
+					(name "Reference") "TP")
+				(field
+					(name "Value") "TestPoint")
+				(field
+					(name "Footprint")
+				)
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "test point")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "passive")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "100nF_(104)_±10%_16V")
+			(description "100nF (104) ±10% 16V")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "100nF (104) ±10% 16V")
+				(field
+					(name "Footprint") "lcsc_footprints:C1525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B104KO5NNNC_C1525.pdf")
+				(field
+					(name "Description") "100nF (104) ±10% 16V")
+				(field
+					(name "LCSC") "C1525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "10KΩ_(1002)_±1%")
+			(description "10KΩ (1002) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "10KΩ (1002) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C25744_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2411221126_UNI-ROYAL-Uniroyal-Elec-0402WGF1002TCE_C25744.pdf")
+				(field
+					(name "Description") "10KΩ (1002) ±1%")
+				(field
+					(name "LCSC") "C25744")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "10nF_(103)_±10%_50V")
+			(description "10nF (103) ±10% 50V")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B103KB5NNNC_C15195.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "10nF (103) ±10% 50V")
+				(field
+					(name "Footprint") "lcsc_footprints:C15195_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05B103KB5NNNC_C15195.pdf")
+				(field
+					(name "Description") "10nF (103) ±10% 50V")
+				(field
+					(name "LCSC") "C15195")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "10uF_(106)_±20%_6_3V")
+			(description "10uF (106) ±20% 6.3V")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "10uF (106) ±20% 6.3V")
+				(field
+					(name "Footprint") "lcsc_footprints:C15525_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2208231630_Samsung-Electro-Mechanics-CL05A106MQ5NUNC_C15525.pdf")
+				(field
+					(name "Description") "10uF (106) ±20% 6.3V")
+				(field
+					(name "LCSC") "C15525")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "18pF_(180)_±5%_50V")
+			(description "18pF (180) ±5% 50V")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "18pF (180) ±5% 50V")
+				(field
+					(name "Footprint") "lcsc_footprints:C1549_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG180J500NT_C1549.pdf")
+				(field
+					(name "Description") "18pF (180) ±5% 50V")
+				(field
+					(name "LCSC") "C1549")
+				(field
+					(name "Manufacturer") "FH(风华)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "1MΩ_(1004)_±1%")
+			(description "1MΩ (1004) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "1MΩ (1004) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C26083_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010030_UNI-ROYAL-Uniroyal-Elec-0402WGF1004TCE_C26083.pdf")
+				(field
+					(name "Description") "1MΩ (1004) ±1%")
+				(field
+					(name "LCSC") "C26083")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "1N4148WS_T4")
+			(description "1N4148WS T4")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101110_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--1N4148WS_C2128.pdf")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "1N4148WS T4")
+				(field
+					(name "Footprint") "lcsc_footprints:C2128_SOD-323_L1_8-W1_3-LS2_5-RD")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1810101110_Jiangsu-Changjing-Electronics-Technology-Co---Ltd--1N4148WS_C2128.pdf")
+				(field
+					(name "Description") "1N4148WS T4")
+				(field
+					(name "LCSC") "C2128")
+				(field
+					(name "Manufacturer") "CJ(江苏长电/长晶)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "K")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "A")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "1uF_(105)_±10%_25V")
+			(description "1uF (105) ±10% 25V")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1uF (105) ±10% 25V")
+				(field
+					(name "Footprint") "lcsc_footprints:C52923_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Samsung-Electro-Mechanics-CL05A105KA5NQNC_C52923.pdf")
+				(field
+					(name "Description") "1uF (105) ±10% 25V")
+				(field
+					(name "LCSC") "C52923")
+				(field
+					(name "Manufacturer") "SAMSUNG(三星)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "22Ω_(22R0)_±1%")
+			(description "22Ω (22R0) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "22Ω (22R0) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C25092_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2205311900_UNI-ROYAL-Uniroyal-Elec-0402WGF220JTCE_C25092.pdf")
+				(field
+					(name "Description") "22Ω (22R0) ±1%")
+				(field
+					(name "LCSC") "C25092")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "2_2nH_±0_3nH")
+			(description "2.2nH ±0.3nH")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2310301641_Sunlord-SDCL1005C2N2STDF_C27122.pdf")
+			(fields
+				(field
+					(name "Reference") "L")
+				(field
+					(name "Value") "2.2nH ±0.3nH")
+				(field
+					(name "Footprint") "lcsc_footprints:C27122_L0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2310301641_Sunlord-SDCL1005C2N2STDF_C27122.pdf")
+				(field
+					(name "Description") "2.2nH ±0.3nH")
+				(field
+					(name "LCSC") "C27122")
+				(field
+					(name "Manufacturer") "Sunlord(顺络)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "3225_40M_12PF_10PPM")
+			(description "3225 40M 12PF 10PPM")
+			(docs "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304071000_SST-3225-40M-12PF-10PPM_C5380316.pdf")
+			(fields
+				(field
+					(name "Reference") "X")
+				(field
+					(name "Value") "3225 40M 12PF 10PPM")
+				(field
+					(name "Footprint") "lcsc_footprints:C5380316_CRYSTAL-SMD_4P-L3_2-W2_5-BL")
+				(field
+					(name "Datasheet") "https://wmsc.lcsc.com/wmsc/upload/file/pdf/v2/lcsc/2304071000_SST-3225-40M-12PF-10PPM_C5380316.pdf")
+				(field
+					(name "Description") "3225 40M 12PF 10PPM")
+				(field
+					(name "LCSC") "C5380316")
+				(field
+					(name "Manufacturer") "SOSET(索斯特)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "GND")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "GND")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "4_7KΩ_(4701)_±1%")
+			(description "4.7KΩ (4701) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "4.7KΩ (4701) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C25900_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF4701TCE_C25900.pdf")
+				(field
+					(name "Description") "4.7KΩ (4701) ±1%")
+				(field
+					(name "LCSC") "C25900")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "6_8KΩ_(6801)_±1%")
+			(description "6.8KΩ (6801) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF6801TCE_C25917.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "6.8KΩ (6801) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C25917_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF6801TCE_C25917.pdf")
+				(field
+					(name "Description") "6.8KΩ (6801) ±1%")
+				(field
+					(name "LCSC") "C25917")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "AO3401A")
+			(description "AO3401A")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf")
+			(fields
+				(field
+					(name "Reference") "Q")
+				(field
+					(name "Value") "AO3401A")
+				(field
+					(name "Footprint") "lcsc_footprints:C15127_SOT-23_L2_9-W1_3-P1_90-LS2_4-BR")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2412061733_Alpha---Omega-Semicon-AO3401A_C15127.pdf")
+				(field
+					(name "Description") "AO3401A")
+				(field
+					(name "LCSC") "C15127")
+				(field
+					(name "Manufacturer") "AOS")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "G")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "S")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "D")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "ESP32-C3FH4")
+			(description "ESP32-C3FH4")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2312201733_Espressif-Systems-ESP32-C3FH4_C2858491.pdf")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "ESP32-C3FH4")
+				(field
+					(name "Footprint") "lcsc_footprints:C2858491_QFN-32_L5_0-W5_0-P0_50-TL-EP3_7")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2312201733_Espressif-Systems-ESP32-C3FH4_C2858491.pdf")
+				(field
+					(name "Description") "ESP32-C3FH4")
+				(field
+					(name "LCSC") "C2858491")
+				(field
+					(name "Manufacturer") "ESPRESSIF(乐鑫)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "LNA_IN")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "VDD3P3")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "VDD3P3")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "XTAL_32K_P")
+					(type "unspecified")
+				)
+				(pin
+					(num "5")
+					(name "XTAL_32K_N")
+					(type "unspecified")
+				)
+				(pin
+					(num "6")
+					(name "GPIO2")
+					(type "unspecified")
+				)
+				(pin
+					(num "7")
+					(name "CHIP_EN")
+					(type "unspecified")
+				)
+				(pin
+					(num "8")
+					(name "GPIO3")
+					(type "unspecified")
+				)
+				(pin
+					(num "9")
+					(name "MTMS")
+					(type "unspecified")
+				)
+				(pin
+					(num "10")
+					(name "MTDI")
+					(type "unspecified")
+				)
+				(pin
+					(num "11")
+					(name "VDD3P3_RTC")
+					(type "unspecified")
+				)
+				(pin
+					(num "12")
+					(name "MTCK")
+					(type "unspecified")
+				)
+				(pin
+					(num "13")
+					(name "MTDO")
+					(type "unspecified")
+				)
+				(pin
+					(num "14")
+					(name "GPIO8")
+					(type "unspecified")
+				)
+				(pin
+					(num "15")
+					(name "GPIO9")
+					(type "unspecified")
+				)
+				(pin
+					(num "16")
+					(name "GPIO10")
+					(type "unspecified")
+				)
+				(pin
+					(num "17")
+					(name "VDD3P3_CPU")
+					(type "unspecified")
+				)
+				(pin
+					(num "18")
+					(name "VDD_SPI")
+					(type "unspecified")
+				)
+				(pin
+					(num "19")
+					(name "SPIHD")
+					(type "unspecified")
+				)
+				(pin
+					(num "20")
+					(name "SPIWP")
+					(type "unspecified")
+				)
+				(pin
+					(num "21")
+					(name "SPICS0")
+					(type "unspecified")
+				)
+				(pin
+					(num "22")
+					(name "SPICLK")
+					(type "unspecified")
+				)
+				(pin
+					(num "23")
+					(name "SPID")
+					(type "unspecified")
+				)
+				(pin
+					(num "24")
+					(name "SPIQ")
+					(type "unspecified")
+				)
+				(pin
+					(num "25")
+					(name "GPIO18")
+					(type "unspecified")
+				)
+				(pin
+					(num "26")
+					(name "GPIO19")
+					(type "unspecified")
+				)
+				(pin
+					(num "27")
+					(name "U0RXD")
+					(type "unspecified")
+				)
+				(pin
+					(num "28")
+					(name "U0TXD")
+					(type "unspecified")
+				)
+				(pin
+					(num "29")
+					(name "XTAL_N")
+					(type "unspecified")
+				)
+				(pin
+					(num "30")
+					(name "XTAL_P")
+					(type "unspecified")
+				)
+				(pin
+					(num "31")
+					(name "VDDA")
+					(type "unspecified")
+				)
+				(pin
+					(num "32")
+					(name "VDDA")
+					(type "unspecified")
+				)
+				(pin
+					(num "33")
+					(name "EP")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "LED__0402")
+			(description "LED  0402")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151119_Everlight-Elec-16-213SDRC-S530-A3-TR8_C71911.pdf")
+			(fields
+				(field
+					(name "Reference") "LED")
+				(field
+					(name "Value") "LED  0402")
+				(field
+					(name "Footprint") "lcsc_footprints:C71911_LED0402-R-RD")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1806151119_Everlight-Elec-16-213SDRC-S530-A3-TR8_C71911.pdf")
+				(field
+					(name "Description") "LED  0402")
+				(field
+					(name "LCSC") "C71911")
+				(field
+					(name "Manufacturer") "EVERLIGHT(亿光)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "+")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "-")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "MCP73831T-2ACI/OT")
+			(description "MCP73831T-2ACI/OT")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Microchip-Tech-MCP73831T-2ACI-OT_C424093.pdf")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MCP73831T-2ACI/OT")
+				(field
+					(name "Footprint") "lcsc_footprints:C424093_SOT-23-5_L3_0-W1_7-P0_95-LS2_8-BL")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1912111437_Microchip-Tech-MCP73831T-2ACI-OT_C424093.pdf")
+				(field
+					(name "Description") "MCP73831T-2ACI/OT")
+				(field
+					(name "LCSC") "C424093")
+				(field
+					(name "Manufacturer") "MICROCHIP(美国微芯)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "STAT")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "VSS")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "VBAT")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "VDD")
+					(type "unspecified")
+				)
+				(pin
+					(num "5")
+					(name "PROG")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "MMA8452QR1_C11360")
+			(description "MMA8452QR1_C11360")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2405281404_NXP-Semicon-MMA8452QR1_C11360.pdf")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "MMA8452QR1_C11360")
+				(field
+					(name "Footprint") "lcsc_footprints:C11360_QFN-16_L3_0-W3_0-P0_50-TL_MMA8452QR1")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2405281404_NXP-Semicon-MMA8452QR1_C11360.pdf")
+				(field
+					(name "Description") "MMA8452QR1_C11360")
+				(field
+					(name "LCSC") "C11360")
+				(field
+					(name "Manufacturer") "NXP(恩智浦)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "VDDIO")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "BYP")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "NC")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "SCL")
+					(type "unspecified")
+				)
+				(pin
+					(num "5")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "6")
+					(name "SDA")
+					(type "unspecified")
+				)
+				(pin
+					(num "7")
+					(name "SA0")
+					(type "unspecified")
+				)
+				(pin
+					(num "8")
+					(name "NC")
+					(type "unspecified")
+				)
+				(pin
+					(num "9")
+					(name "INT2")
+					(type "unspecified")
+				)
+				(pin
+					(num "10")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "11")
+					(name "INT1")
+					(type "unspecified")
+				)
+				(pin
+					(num "12")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "13")
+					(name "NC")
+					(type "unspecified")
+				)
+				(pin
+					(num "14")
+					(name "VDD")
+					(type "unspecified")
+				)
+				(pin
+					(num "15")
+					(name "NC")
+					(type "unspecified")
+				)
+				(pin
+					(num "16")
+					(name "NC")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "Mini_2_45_GHz_Antenna,_Johanson_Technology")
+			(description "Mini 2.45 GHz Antenna, Johanson Technology")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_1810010413_Johanson-Dielectrics-2450AT18A100E_C89334.pdf")
+			(fields
+				(field
+					(name "Reference") "AE")
+				(field
+					(name "Value") "Mini 2.45 GHz Antenna, Johanson Technology")
+				(field
+					(name "Footprint") "lcsc_footprints:C89334_ANT-SMD_L3_2-W1_6")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_1810010413_Johanson-Dielectrics-2450AT18A100E_C89334.pdf")
+				(field
+					(name "Description") "Mini 2.45 GHz Antenna, Johanson Technology")
+				(field
+					(name "LCSC") "C89334")
+				(field
+					(name "Manufacturer") "JOHANSON(约翰逊)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "ANT")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "TS342A2P")
+			(description "TS342A2P")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2404241539_SHOU-HAN-TS342A2P_C398055.pdf")
+			(fields
+				(field
+					(name "Reference") "SW")
+				(field
+					(name "Value") "TS342A2P")
+				(field
+					(name "Footprint") "lcsc_footprints:C398055_SW-SMD_L4_0-W3_0-LS5_0-EH")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2404241539_SHOU-HAN-TS342A2P_C398055.pdf")
+				(field
+					(name "Description") "TS342A2P")
+				(field
+					(name "LCSC") "C398055")
+				(field
+					(name "Manufacturer") "SHOU HAN(首韩)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "USBLC6-2SC6")
+			(description "USBLC6-2SC6")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf")
+			(fields
+				(field
+					(name "Reference") "D")
+				(field
+					(name "Value") "USBLC6-2SC6")
+				(field
+					(name "Footprint") "lcsc_footprints:C7519_SOT-23-6_L2_9-W1_6-P0_95-LS2_8-BL")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2410121836_STMicroelectronics-USBLC6-2SC6_C7519.pdf")
+				(field
+					(name "Description") "USBLC6-2SC6")
+				(field
+					(name "LCSC") "C7519")
+				(field
+					(name "Manufacturer") "ST(意法半导体)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "input")
+				)
+				(pin
+					(num "4")
+					(name "4")
+					(type "input")
+				)
+				(pin
+					(num "5")
+					(name "5")
+					(type "input")
+				)
+				(pin
+					(num "6")
+					(name "6")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported")
+			(part "XC6206P332MR")
+			(description "XC6206P332MR")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Torex-Semicon-XC6206P332MR-G_C5446.pdf")
+			(fields
+				(field
+					(name "Reference") "U")
+				(field
+					(name "Value") "XC6206P332MR")
+				(field
+					(name "Footprint") "lcsc_footprints:C5446_SOT-23-3_L2_9-W1_6-P1_90-LS2_8-BR")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_Torex-Semicon-XC6206P332MR-G_C5446.pdf")
+				(field
+					(name "Description") "XC6206P332MR")
+				(field
+					(name "LCSC") "C5446")
+				(field
+					(name "Manufacturer") "TOREX(特瑞仕)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "Vout")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "Vin")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported_FOB")
+			(part "1_5pF_(1R5)_±0_25pF_50V")
+			(description "1.5pF (1R5) ±0.25pF 50V")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf")
+			(fields
+				(field
+					(name "Reference") "C")
+				(field
+					(name "Value") "1.5pF (1R5) ±0.25pF 50V")
+				(field
+					(name "Footprint") "lcsc_footprints:C1552_C0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2304140030_FH--Guangdong-Fenghua-Advanced-Tech-0402CG1R5C500NT_C1552.pdf")
+				(field
+					(name "Description") "1.5pF (1R5) ±0.25pF 50V")
+				(field
+					(name "LCSC") "C1552")
+				(field
+					(name "Manufacturer") "FH(风华)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported_GPS")
+			(part "1KΩ_(1001)_±1%")
+			(description "1KΩ (1001) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "1KΩ (1001) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C11702_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010216_UNI-ROYAL-Uniroyal-Elec-0402WGF1001TCE_C11702.pdf")
+				(field
+					(name "Description") "1KΩ (1001) ±1%")
+				(field
+					(name "LCSC") "C11702")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported_GPS")
+			(part "5_1KΩ_(5101)_±1%")
+			(description "5.1KΩ (5101) ±1%")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf")
+			(fields
+				(field
+					(name "Reference") "R")
+				(field
+					(name "Value") "5.1KΩ (5101) ±1%")
+				(field
+					(name "Footprint") "lcsc_footprints:C25905_R0402")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2206010045_UNI-ROYAL-Uniroyal-Elec-0402WGF5101TCE_C25905.pdf")
+				(field
+					(name "Description") "5.1KΩ (5101) ±1%")
+				(field
+					(name "LCSC") "C25905")
+				(field
+					(name "Manufacturer") "UNI-ROYAL(厚声)")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "input")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "input")
+				)
+			)
+		)
+		(libpart
+			(lib "lcsc_imported_GPS")
+			(part "TYPE-C-31-M-12")
+			(description "TYPE-C-31-M-12")
+			(docs "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf")
+			(fields
+				(field
+					(name "Reference") "USBC")
+				(field
+					(name "Value") "TYPE-C-31-M-12")
+				(field
+					(name "Footprint") "lcsc_footprints:C165948_USB-C_SMD-TYPE-C-31-M-12_1")
+				(field
+					(name "Datasheet") "https://www.lcsc.com/datasheet/lcsc_datasheet_2205251630_Korean-Hroparts-Elec-TYPE-C-31-M-12_C165948.pdf")
+				(field
+					(name "Description") "TYPE-C-31-M-12")
+				(field
+					(name "LCSC") "C165948")
+				(field
+					(name "Manufacturer") "韩国韩荣")
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "EH")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "EH")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "EH")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "EH")
+					(type "unspecified")
+				)
+				(pin
+					(num "A1B12")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "A4B9")
+					(name "VBUS")
+					(type "unspecified")
+				)
+				(pin
+					(num "A5")
+					(name "CC1")
+					(type "unspecified")
+				)
+				(pin
+					(num "A6")
+					(name "DP1")
+					(type "unspecified")
+				)
+				(pin
+					(num "A7")
+					(name "DN1")
+					(type "unspecified")
+				)
+				(pin
+					(num "A8")
+					(name "SBU1")
+					(type "unspecified")
+				)
+				(pin
+					(num "B1A12")
+					(name "GND")
+					(type "unspecified")
+				)
+				(pin
+					(num "B4A9")
+					(name "VBUS")
+					(type "unspecified")
+				)
+				(pin
+					(num "B5")
+					(name "CC2")
+					(type "unspecified")
+				)
+				(pin
+					(num "B6")
+					(name "DP2")
+					(type "unspecified")
+				)
+				(pin
+					(num "B7")
+					(name "DN2")
+					(type "unspecified")
+				)
+				(pin
+					(num "B8")
+					(name "SBU2")
+					(type "unspecified")
+				)
+			)
+		)
+	)
+	(libraries
+		(library
+			(logical "Connector")
+			(uri "${KICAD10_SYMBOL_DIR}/Connector.kicad_sym")
+		)
+		(library
+			(logical "lcsc_imported")
+			(uri "${KIPRJMOD}/libs/lcsc/symbols/lcsc_imported.kicad_sym")
+		)
+		(library
+			(logical "lcsc_imported_FOB")
+			(uri "C:/Users/Admin/Documents/KiCad/SHAKE_FOB_REV-A/ESP32_C3_FOB/libs/lcsc/symbols/lcsc_imported.kicad_sym")
+		)
+		(library
+			(logical "lcsc_imported_GPS")
+			(uri "C:/Users/Admin/Documents/KiCad/GPS/GPS_F9P_REV-A/libs/lcsc/symbols/lcsc_imported.kicad_sym")
+		)
+	)
+	(nets
+		(net
+			(code "1")
+			(name "3.3V")
+			(class "POWER,Default")
+			(node
+				(ref "C10")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C11")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C18")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C20")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C21")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C8")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R11")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R12")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R14")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "TP2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "2")
+				(pinfunction "Vout_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "11")
+				(pinfunction "VDD3P3_RTC_11")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "17")
+				(pinfunction "VDD3P3_CPU_17")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "18")
+				(pinfunction "VDD_SPI_18")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "2")
+				(pinfunction "VDD3P3_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "3")
+				(pinfunction "VDD3P3_3")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "31")
+				(pinfunction "VDDA_31")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "32")
+				(pinfunction "VDDA_32")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "1")
+				(pinfunction "VDDIO_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "14")
+				(pinfunction "VDD_14")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "2")
+			(name "BAT")
+			(class "POWER,Default")
+			(node
+				(ref "C2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "Q1")
+				(pin "3")
+				(pinfunction "D_3")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "R15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "TP5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "3")
+				(pinfunction "VBAT_3")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "3")
+			(name "BOOT")
+			(class "Default")
+			(node
+				(ref "R9")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "SW2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "15")
+				(pinfunction "GPIO9_15")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "4")
+			(name "CHIP_EN")
+			(class "Default")
+			(node
+				(ref "C6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "R7")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "SW1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "7")
+				(pinfunction "CHIP_EN_7")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "5")
+			(name "GND")
+			(class "POWER,Default")
+			(node
+				(ref "C1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "C10")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C15")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C16")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C17")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C18")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "C19")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "C20")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C21")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "C3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C7")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C8")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C9")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "D1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R13")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R16")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "R2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R5")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "SW1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "SW2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "TP1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "TP6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U1")
+				(pin "2")
+				(pinfunction "VSS_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U2")
+				(pin "1")
+				(pinfunction "GND_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "33")
+				(pinfunction "EP_33")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "10")
+				(pinfunction "GND_10")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "12")
+				(pinfunction "GND_12")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "5")
+				(pinfunction "GND_5")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "7")
+				(pinfunction "SA0_7")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "1")
+				(pinfunction "EH_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "2")
+				(pinfunction "EH_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "3")
+				(pinfunction "EH_3")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "4")
+				(pinfunction "EH_4")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "A1B12")
+				(pinfunction "GND_A1B12")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "B1A12")
+				(pinfunction "GND_B1A12")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "X1")
+				(pin "2")
+				(pinfunction "GND_2")
+				(pintype "input")
+			)
+			(node
+				(ref "X1")
+				(pin "4")
+				(pinfunction "GND_4")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "6")
+			(name "INT1")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "4")
+				(pinfunction "XTAL_32K_P_4")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "11")
+				(pinfunction "INT1_11")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "7")
+			(name "INT2")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "5")
+				(pinfunction "XTAL_32K_N_5")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "9")
+				(pinfunction "INT2_9")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "8")
+			(name "Net-(AE1-ANT)")
+			(class "Default")
+			(node
+				(ref "AE1")
+				(pin "1")
+				(pinfunction "ANT_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "C14")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "L3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "9")
+			(name "Net-(D1-Pad4)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "input")
+			)
+			(node
+				(ref "R4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "10")
+			(name "Net-(D1-Pad6)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "6")
+				(pinfunction "6_6")
+				(pintype "input")
+			)
+			(node
+				(ref "R3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "11")
+			(name "Net-(LED1--)")
+			(class "Default")
+			(node
+				(ref "LED1")
+				(pin "2")
+				(pinfunction "-_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R6")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "12")
+			(name "Net-(U1-PROG)")
+			(class "Default")
+			(node
+				(ref "R5")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "5")
+				(pinfunction "PROG_5")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "13")
+			(name "Net-(U1-STAT)")
+			(class "Default")
+			(node
+				(ref "R6")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "1")
+				(pinfunction "STAT_1")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "14")
+			(name "Net-(U3-GPIO2)")
+			(class "Default")
+			(node
+				(ref "R8")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "6")
+				(pinfunction "GPIO2_6")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "15")
+			(name "Net-(U3-GPIO8)")
+			(class "Default")
+			(node
+				(ref "R14")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "14")
+				(pinfunction "GPIO8_14")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "16")
+			(name "Net-(U3-LNA_IN)")
+			(class "Default")
+			(node
+				(ref "C15")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "L3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U3")
+				(pin "1")
+				(pinfunction "LNA_IN_1")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "17")
+			(name "Net-(U4-BYP)")
+			(class "Default")
+			(node
+				(ref "C17")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "2")
+				(pinfunction "BYP_2")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "18")
+			(name "Net-(USBC1-CC1)")
+			(class "Default")
+			(node
+				(ref "R1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "USBC1")
+				(pin "A5")
+				(pinfunction "CC1_A5")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "19")
+			(name "Net-(USBC1-CC2)")
+			(class "Default")
+			(node
+				(ref "R2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "USBC1")
+				(pin "B5")
+				(pinfunction "CC2_B5")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "20")
+			(name "Net-(USBC1-DN1)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "USBC1")
+				(pin "A7")
+				(pinfunction "DN1_A7")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "B7")
+				(pinfunction "DN2_B7")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "21")
+			(name "Net-(USBC1-DP1)")
+			(class "Default")
+			(node
+				(ref "D1")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "input")
+			)
+			(node
+				(ref "USBC1")
+				(pin "A6")
+				(pinfunction "DP1_A6")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "B6")
+				(pinfunction "DP2_B6")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "22")
+			(name "SCL")
+			(class "Default")
+			(node
+				(ref "R12")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "TP3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "10")
+				(pinfunction "MTDI_10")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "4")
+				(pinfunction "SCL_4")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "23")
+			(name "SDA")
+			(class "Default")
+			(node
+				(ref "R11")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "TP4")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "passive")
+			)
+			(node
+				(ref "U3")
+				(pin "9")
+				(pinfunction "MTMS_9")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U4")
+				(pin "6")
+				(pinfunction "SDA_6")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "24")
+			(name "USB_D+")
+			(class "Default")
+			(node
+				(ref "R4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "26")
+				(pinfunction "GPIO19_26")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "25")
+			(name "USB_D-")
+			(class "Default")
+			(node
+				(ref "R3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "25")
+				(pinfunction "GPIO18_25")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "26")
+			(name "VBAT_SENSE")
+			(class "Default")
+			(node
+				(ref "C19")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "R15")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "R16")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "8")
+				(pinfunction "GPIO3_8")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "27")
+			(name "VBUS")
+			(class "POWER,Default")
+			(node
+				(ref "C1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+			(node
+				(ref "C3")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "D1")
+				(pin "5")
+				(pinfunction "5_5")
+				(pintype "input")
+			)
+			(node
+				(ref "D2")
+				(pin "2")
+				(pinfunction "A_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "LED1")
+				(pin "1")
+				(pinfunction "+_1")
+				(pintype "input")
+			)
+			(node
+				(ref "Q1")
+				(pin "1")
+				(pinfunction "G_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "R13")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U1")
+				(pin "4")
+				(pinfunction "VDD_4")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "A4B9")
+				(pinfunction "VBUS_A4B9")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "USBC1")
+				(pin "B4A9")
+				(pinfunction "VBUS_B4A9")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "28")
+			(name "V_SYS")
+			(class "POWER,Default")
+			(node
+				(ref "C4")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "D2")
+				(pin "1")
+				(pinfunction "K_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "Q1")
+				(pin "2")
+				(pinfunction "S_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "U2")
+				(pin "3")
+				(pinfunction "Vin_3")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "29")
+			(name "XTAL_N")
+			(class "Default")
+			(node
+				(ref "C13")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "29")
+				(pinfunction "XTAL_N_29")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "X1")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "30")
+			(name "XTAL_P")
+			(class "Default")
+			(node
+				(ref "C12")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "input")
+			)
+			(node
+				(ref "U3")
+				(pin "30")
+				(pinfunction "XTAL_P_30")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "X1")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "input")
+			)
+		)
+		(net
+			(code "31")
+			(name "unconnected-(AE1-Pad2)")
+			(class "Default")
+			(node
+				(ref "AE1")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "32")
+			(name "unconnected-(U3-GPIO10-Pad16)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "16")
+				(pinfunction "GPIO10_16")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "33")
+			(name "unconnected-(U3-MTCK-Pad12)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "12")
+				(pinfunction "MTCK_12")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "34")
+			(name "unconnected-(U3-MTDO-Pad13)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "13")
+				(pinfunction "MTDO_13")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "35")
+			(name "unconnected-(U3-SPICLK-Pad22)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "22")
+				(pinfunction "SPICLK_22")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "36")
+			(name "unconnected-(U3-SPICS0-Pad21)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "21")
+				(pinfunction "SPICS0_21")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "37")
+			(name "unconnected-(U3-SPID-Pad23)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "23")
+				(pinfunction "SPID_23")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "38")
+			(name "unconnected-(U3-SPIHD-Pad19)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "19")
+				(pinfunction "SPIHD_19")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "39")
+			(name "unconnected-(U3-SPIQ-Pad24)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "24")
+				(pinfunction "SPIQ_24")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "40")
+			(name "unconnected-(U3-SPIWP-Pad20)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "20")
+				(pinfunction "SPIWP_20")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "41")
+			(name "unconnected-(U3-U0RXD-Pad27)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "27")
+				(pinfunction "U0RXD_27")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "42")
+			(name "unconnected-(U3-U0TXD-Pad28)")
+			(class "Default")
+			(node
+				(ref "U3")
+				(pin "28")
+				(pinfunction "U0TXD_28")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "43")
+			(name "unconnected-(U4-NC-Pad3)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "3")
+				(pinfunction "NC_3")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "44")
+			(name "unconnected-(U4-NC-Pad8)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "8")
+				(pinfunction "NC_8")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "45")
+			(name "unconnected-(U4-NC-Pad13)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "13")
+				(pinfunction "NC_13")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "46")
+			(name "unconnected-(U4-NC-Pad15)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "15")
+				(pinfunction "NC_15")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "47")
+			(name "unconnected-(U4-NC-Pad16)")
+			(class "Default")
+			(node
+				(ref "U4")
+				(pin "16")
+				(pinfunction "NC_16")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "48")
+			(name "unconnected-(USBC1-SBU1-PadA8)")
+			(class "Default")
+			(node
+				(ref "USBC1")
+				(pin "A8")
+				(pinfunction "SBU1_A8")
+				(pintype "unspecified+no_connect")
+			)
+		)
+		(net
+			(code "49")
+			(name "unconnected-(USBC1-SBU2-PadB8)")
+			(class "Default")
+			(node
+				(ref "USBC1")
+				(pin "B8")
+				(pinfunction "SBU2_B8")
+				(pintype "unspecified+no_connect")
+			)
+		)
+	)
+)

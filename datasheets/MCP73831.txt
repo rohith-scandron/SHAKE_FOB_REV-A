@@ -1,0 +1,1831 @@
+
+===PAGE 1===
+© 2005 Microchip Technology Inc. DS21984A-page 1
+MCP73831
+Features:
+• Linear Charge Management Controller:
+- Integrated Pass Transistor
+- Integrated Current Sense
+- Reverse Discharge Protection
+ High Accuracy Preset Voltage Regulation: +
+ 0.75% 
+ Four Voltage Regulation Options:
+- 4.20V, 4.35V, 4.40V, 4.50V
+ Programmable Charge Current
+ Selectable Preconditioning
+ Selectable End-of-Charge Control
+ Charge Status Output
+ Automatic Power-Down
+ Thermal Regulation
+ Temperature Range: -40°C to +85°C
+ Packaging:
+- 8-Lead, 2 mm x 3 mm DFN
+- 5-Lead, SOT23
+Applications:
+ Lithium-Ion/Lithium-Polymer Battery Chargers
+ Personal Data Assistants
+ Cellular Telephones
+D i g i t a l  C a m e r a s
+ MP3 Players
+ Bluetooth Headsets
+ USB Chargers
+Typical Application
+Description:
+The MCP73831 is a highly advanced linear charge
+management controller for use in space-limited, cost
+sensitive applications. The MCP73831 is available in
+an 8-Lead, 2 mm x 3 mm DFN package or a 5-Lead,
+SOT23 package. Along with its small physical size, the
+low number of external components required makes
+the MCP73831 ideally suited for portable applications.
+For applications charging from a USB port, the
+MCP73831 adheres to all the specifications governing
+the USB power bus.
+The MCP73831 employs a constant-current/constant-
+voltage charge algorithm with selectable precondition-
+ing and charge termination. The constant voltage regu-
+lation is fixed with four available options: 4.20V, 4.35V,
+4.40V, or 4.50V, to accommodate new, emerging bat-
+tery charging requirements. The constant current value
+is set with one external resistor. The MCP73831 limits
+the charge current based on die temperature during
+high power or high ambient conditions. This thermal
+regulation optimizes the charge cycle time while
+maintaining device reliability.
+Several options are available for the preconditioning
+threshold, preconditioning current value, charge termi-
+nation value, and automatic recharge threshold. The
+preconditioning value and charge termination value are
+set as a ratio, or percentage, of the programmed con-
+stant current value. Preconditioning can be disabled.
+Refer to Section 1.0 “Electrical Characteristics” for
+available options and the Product Identification System
+for standard options.
+The MCP73831 is fully specified over the ambient
+temperature range of -40°C to +85°C.
+Package Types
+STAT
+VDD
+VSS
+PROG
+VBAT +
+-
+Single
+Li-Ion
+Cell
+4
+MCP73831
+5
+3
+1
+500 mA Li-Ion Battery Charger
+2
+VIN
+4.7 μF
+470Ω 2k Ω
+4.7 μF
+SOT23-5
+VBAT
+VSS
+VDD
+1
+2
+3
+5
+4
+PROGSTAT
+8-Lead DFN
+1
+2
+3
+4
+8
+7
+6
+5
+VDD
+VBAT
+VBAT
+VDD
+NC
+PROG
+VSS
+STAT
+(2 mm x 3 mm)
+Miniature Single Cell, Fully Integrated Li-Ion,
+Li-Polymer Charge Management Controller
+===PAGE 2===
+MCP73831
+DS21984A-page 2 © 2005 Microchip Technology Inc.
+Functional Block Diagram
++
+-
+REFERENCE
+GENERATOR
+VREF(1.22V)
+VBAT
+VDD
+STAT
+PROG
+VBAT
+G=0.001
+VSS
+DIRECTION
+ CONTROL
+477 kΩ
+255 kΩ
+UVLO
++
+-
++
+-
+SHDN
+DIRECTION 
+CONTROL
+0.5 μA
+PRECONDITION
+6 μA
+6 μA
++
+-
+TERMINATION
++
+-
+43.6 kΩ
++
+-
+CA
+3.9 kΩ
+111 kΩ
+190 kΩ
+7k Ω
+15 kΩ
+182.3 kΩ
+111 kΩ
+CHARGE
++
+-
++
+-
+VA
+89 kΩ
+361 kΩ
+100 kΩ
+0.5 μA
+===PAGE 3===
+© 2005 Microchip Technology Inc. DS21984A-page 3
+MCP73831
+1.0 ELECTRICAL 
+CHARACTERISTICS
+Absolute Maximum Ratings†
+VDDN .................................................................................7.0V
+All Inputs and Outputs w.r.t. VSS ............... -0.3 to (VDD+0.3)V
+Maximum Junction Temperature, TJ ............Internally Limited
+Storage temperature .....................................-65°C to +150°C
+ESD protection on all pins:
+Human Body Model (1.5 kΩ in Series with 100 pF) .......≥ 4k V
+Machine Model (200 pF, No Series Resistance) .............400V
+† Notice:  Stresses above those listed under “Maximum
+Ratings” may cause permanent damage to the device. This is
+a stress rating only and functional operation of the device at
+those or any other conditions above those indicated in the
+operational listings of this s pecification is not implied.
+Exposure to maximum rating conditions for extended periods
+may affect device reliability.
+DC CHARACTERISTICS
+Electrical Specifications: Unless otherwise indicated, all limits apply for V DD= [VREG(typ.) + 0.3V] to 6V, TA = -40°C to +85°C. 
+Typical values are at +25°C, VDD = [VREG (typ.) + 1.0V] 
+Parameters Sym. Min. Typ. Max. Units Conditions
+Supply Input
+Supply Voltage V DD 3.75 — 6 V
+Supply Current I SS — 510 1500 μA Charging
+— 53 200 μA Charge Complete,
+No Battery
+—2 55 0 μA PROG Floating
+—1 5 μAV DD < (VBAT - 50 mV)
+—0 . 1 2 μAV DD < VSTOP
+UVLO Start Threshold V START 3.3 3.45 3.6 V V DD Low-to-High
+UVLO Stop Threshold V STOP 3.2 3.38 3.5 V V DD High-to-Low
+UVLO Hysteresis V HYS —7 0— m V
+Voltage Regulation (Constant-Voltage Mode)
+Regulated Output Voltage V REG 4.168 4.20 4.232 V MCP73831-2
+4.317 4.35 4.383 V MCP73831-3
+4.367 4.40 4.433 V MCP73831-4
+4.466 4.50 4.534 V MCP73831-5
+VDD = [VREG(Typ)+1V]
+IOUT = 10 mA 
+TA = -5°C to +55°C
+Line Regulation |(ΔVBAT/VBAT)/
+ΔVDD|
+— 0.09 0.30 %/V V DD = [VREG(Typ)+1V] to 6V
+IOUT = 10 mA
+Load Regulation |ΔVBAT/VBAT| — 0.05 0.30 % I OUT = 10 mA to 50 mA
+VDD = [VREG(Typ)+1V]
+Supply Ripple Attenuation PSRR — 52 —- dB I OUT= 1 0m A ,  1 0 H z  t o  1k H z
+—4 7— d B I OUT=10 mA, 10Hz to 10 kHz
+—2 2— d B I OUT= 1 0m A ,  1 0 H z  t o  1M H z
+Current Regulation (Fast Charge Constant-Current Mode)
+Fast Charge Current 
+Regulation 
+IREG 90 100 110 mA PROG = 10 k Ω
+450 505 550 mA PROG = 2.0 k Ω, Note 1
+TA = -5°C to +55°C
+Note 1: Not production tested. Ensured by design.
+===PAGE 4===
+MCP73831
+DS21984A-page 4 © 2005 Microchip Technology Inc.
+Preconditioning Current Regulation (Trickle Charge Constant-Current Mode)
+Precondition Current 
+Ratio
+IPREG / IREG 7.5 10 12.5 % PROG = 2.0 k Ω to 10 kΩ
+15 20 25 % PROG = 2.0 k Ω to 10 kΩ
+30 40 50 % PROG = 2.0 k Ω to 10 kΩ
+— 100 — % No Preconditioning
+TA = -5°C to +55°C
+Precondition Voltage 
+Threshold Ratio
+VPTH / VREG 64 66.5 69 % V BAT Low-to-High
+69 71.5 74 % V BAT Low-to-High
+Precondition Hysteresis V PHYS —1 1 0— m V V BAT High-to-Low
+Charge Termination
+Charge Termination 
+Current Ratio
+ITERM / IREG 3.75 5 6.25 % PROG = 2.0 k Ω to 10 kΩ
+5.6 7.5 9.4 % PROG = 2.0 k Ω to 10 kΩ
+7.5 10 12.5 % PROG = 2.0 k Ω to 10 kΩ
+15 20 25 % PROG = 2.0 k Ω to 10 kΩ
+TA = -5°C to +55°C
+Automatic Recharge
+Recharge Voltage Thresh-
+old Ratio
+VRTH / VREG 91.5 94.0 96.5 % V BAT High-to-Low
+94 96.5 99 % V BAT High-to-Low
+Pass Transistor ON-Resistance
+ON-Resistance R DSON —3 5 0— m Ω VDD = 3.75V, TJ = 105°C
+Battery Discharge Current
+Output Reverse Leakage 
+Current
+I
+DISCHARGE —0 . 1 5 2 μA PROG Floating
+—0 . 2 5 2 μAV DD < (VBAT - 50 mV)
+—0 . 1 5 2 μAV DD < VSTOP
+— -5.5 -15 μA Charge Complete
+Status Indicator – STAT
+Sink Current I SINK ——2 5 m A
+Low Output Voltage V OL —0 . 4 1 V I SINK = 4 mA
+Source Current I SOURCE ——3 5 m A
+High Output Voltage V OH —V DD-0.4 V DD - 1 V I SOURCE = 4 mA
+Input Leakage Current I LK —0 . 0 3 1 μA High-Impedance
+PROG Input
+Charge Impedance 
+Range
+RPROG 2— 2 0 k Ω
+Minimum Shutdown 
+Impedance
+RPROG 70 — 200 k Ω
+Thermal Shutdown
+Die Temperature T SD —1 5 0— °C
+Die Temperature 
+Hysteresis
+TSDHYS —1 0— °C
+DC CHARACTERISTICS (CONTINUED)
+Electrical Specifications: Unless otherwise indicated, all limits apply for V DD= [VREG(typ.) + 0.3V] to 6V, TA = -40°C to +85°C. 
+Typical values are at +25°C, VDD = [VREG (typ.) + 1.0V] 
+Parameters Sym. Min. Typ. Max. Units Conditions
+Note 1: Not production tested. Ensured by design.
+===PAGE 5===
+© 2005 Microchip Technology Inc. DS21984A-page 5
+MCP73831
+TEMPERATURE SPECIFICATIONS
+AC CHARACTERISTICS
+Electrical Specifications: Unless otherwise indicated, all limits apply for VDD = [VREG (typ.) + 0.3V] to 12V, 
+TA = -40°C to +85°C. Typical values are at +25°C, VDD = [VREG (typ.) + 1.0V] 
+Parameters Sym. Min. Typ. Max. Units Conditions
+UVLO Start Delay t START —— 5 m s V DD Low-to-High
+Constant-Current Regulation
+Transition Time Out of 
+Preconditioning
+tDELAY —— 1 m s V BAT < VPTH to VBAT > VPTH
+Current Rise Time Out of 
+Preconditioning
+tRISE —— 1 m s I OUT Rising to 90% of IREG
+Termination Comparator 
+Filter
+tTERM 0.4 1.3 3.2 ms Average I OUT Falling
+Charge Comparator Filter t CHARGE 0.4 1.3 3.2 ms Average V BAT 
+Status Indicator
+Status Output turn-off t
+OFF —— 2 0 0 μsI SINK = 1 mA to 0 mA
+Status Output turn-on t ON —— 2 0 0 μsI SINK = 0 mA to 1 mA
+Electrical Specifications: Unless otherwise indicated, all limits apply for VDD = [VREG (typ.) + 0.3V] to 12V.
+Typical values are at +25°C, VDD = [VREG (typ.) + 1.0V] 
+Parameters Sym. Min. Typ. Max. Units Conditions
+Temperature Ranges
+Specified Temperature Range T A -40 — +85 °C
+Operating Temperature Range T J -40 — +125 °C
+Storage Temperature Range T A -65 — +150 °C
+Thermal Package Resistances
+5-Lead, SOT23 θJA — 230 — °C/W 4-Layer JC51-7 Standard 
+Board, Natural Convection
+8-Lead, 2 mm x 3 mm, DFN θJA — 76 — °C/W 4-Layer JC51-7 Standard 
+Board, Natural Convection
+===PAGE 6===
+MCP73831
+DS21984A-page 6 © 2005 Microchip Technology Inc.
+2.0 TYPICAL PERFORMANCE CURVES
+NOTE: Unless otherwise indicated, VDD = [VREG(typ.) + 1V], IOUT = 10 mA and TA= +25°C, Constant-Voltage mode.
+FIGURE 2-1: Battery Regulation Voltage 
+(VBAT) vs. Supply Voltage (VDD).
+FIGURE 2-2: Battery Regulation Voltage 
+(VBAT) vs. Ambient Temperature (TA).
+FIGURE 2-3: Output Leakage Current 
+(IDISCHARGE) vs. Battery Regulation Voltage 
+(VBAT).
+FIGURE 2-4: Charge Current (IOUT) vs. 
+Programming Resistor (RPROG).
+FIGURE 2-5: Charge Current (IOUT) vs. 
+Supply Voltage (VDD).
+FIGURE 2-6: Charge Current (IOUT) vs. 
+Supply Voltage (VDD).
+Note: The graphs and tables provided following this note are a statistical summary based on a limited number of
+samples and are provided for informational purposes only. The performance characteristics listed herein
+are not tested or guaranteed. In some graphs or tables, the data presented may be outside the specified
+operating range (e.g., outside specified power supply range) and therefore outside the warranted range.
+4.170
+4.175
+4.180
+4.185
+4.190
+4.195
+4.200
+4.205
+4.210
+4.50 4.75 5.00 5.25 5.50 5.75 6.00
+Supply Voltage (V)
+Battery Regulation Voltage 
+(V)
+MCP73831-2
+IOUT = 10 mA
+IOUT = 100 mA
+IOUT = 450 mA
+4.170
+4.175
+4.180
+4.185
+4.190
+4.195
+4.200
+4.205
+4.210
+-40
+-30
+-20
+-10
+0
+10
+20
+30
+40
+50
+60
+70
+80
+Ambient Temperature (°C)
+Battery Regulation Voltage (V)
+MCP73831-2
+IOUT = 10 mA
+IOUT = 100 mA
+IOUT = 450 mA
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0.40
+3.00 3.20 3.40 3.60 3.80 4.00 4.20
+Battery Regulation Voltage (V)
+Output Leakage Current (µA)
++85°C
+-40°C
++25°C
+0
+50
+100
+150
+200
+250
+300
+350
+400
+450
+500
+550
+2 4 6 8 10 12 14 16 18 20
+Charge Current (mA)
+Programming Resistor (kΩ)
+96
+97
+98
+99
+100
+101
+102
+103
+104
+4.50 4.75 5.00 5.25 5.50 5.75 6.00
+Supply Voltage (V)
+Charge Current (mA)
+RPROG = 10 kΩ 
+500
+502
+504
+506
+508
+510
+512
+514
+516
+4.50 4.75 5.00 5.25 5.50 5.75 6.00
+Supply Voltage (V)
+Charge Current (mA)
+RPROG = 2 kΩ 
+===PAGE 7===
+© 2005 Microchip Technology Inc. DS21984A-page 7
+MCP73831
+TYPICAL PERFORMANCE CURVES (CONTINUED)
+NOTE: Unless otherwise indicated, VDD = [VREG(typ.) + 1V], IOUT = 10 mA and TA= +25°C, Constant-Voltage mode.
+FIGURE 2-7: Charge Current (IOUT) vs. 
+Ambient Temperature (TA).
+FIGURE 2-8: Charge Current (IOUT) vs. 
+Ambient Temperature (TA).
+FIGURE 2-9: Charge Current (IOUT) vs. 
+Junction Temperature (TJ).
+FIGURE 2-10: Charge Current (IOUT) vs. 
+Junction Temperature (TJ).
+FIGURE 2-11: Power Supply Ripple 
+Rejection (PSRR).
+FIGURE 2-12: Power Supply Ripple 
+Rejection (PSRR).
+96
+97
+98
+99
+100
+101
+102
+103
+104
+-40
+-30
+-20
+-10
+0
+10
+20
+30
+40
+50
+60
+70
+80
+Ambient Temperature (°C)
+Charge Current (mA)
+RPROG = 10 kΩ 
+500
+502
+504
+506
+508
+510
+512
+514
+516
+-40
+-30
+-20
+-10
+0
+10
+20
+30
+40
+50
+60
+70
+80
+Ambient Temperature (°C)
+Charge Current (mA)
+RPROG = 2 kΩ 
+0
+15
+30
+45
+60
+75
+90
+105
+120
+25
+35
+45
+55
+65
+75
+85
+95
+105
+115
+125
+135
+145
+155
+Junction Temperature (°C)
+Charge Current (mA)
+RPROG = 10 kΩ 
+0
+75
+150
+225
+300
+375
+450
+525
+25
+35
+45
+55
+65
+75
+85
+95
+105
+115
+125
+135
+145
+155
+Junction Temperature (°C)
+Charge Current (mA)
+RPROG = 2 kΩ 
+-60
+-50
+-40
+-30
+-20
+-10
+0
+0.01 0.1 1 10 100 1000
+Frequency (kHz)
+Attenuation (dB)
+VAC = 100 mVp-p
+IOUT = 10 mA
+COUT = 4.7 PPF, X7R Ceramic
+-60
+-50
+-40
+-30
+-20
+-10
+0
+0.01 0.1 1 10 100 1000
+Frequency (kHz)
+Attenuation (dB)
+VAC = 100 mVp-p
+IOUT = 100 mA
+COUT = 4.7 µF, X7R Ceramic
+===PAGE 8===
+MCP73831
+DS21984A-page 8 © 2005 Microchip Technology Inc.
+TYPICAL PERFORMANCE CURVES (CONTINUED)
+NOTE: Unless otherwise indicated, VDD = [VREG(typ.) + 1V], IOUT = 10 mA and TA= +25°C, Constant-Voltage mode.
+FIGURE 2-13: Line Transient Response.
+FIGURE 2-14: Line Transient Response.
+FIGURE 2-15: Load Transient Response.
+FIGURE 2-16: Load Transient Response.
+FIGURE 2-17: Complete Charge Cycle 
+(180 mAh Li-Ion Battery).
+FIGURE 2-18: Complete Charge Cycle 
+(1000 mAh Li-Ion Battery).
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+Time (µs)
+Source Voltage (V)
+-0.30
+-0.25
+-0.20
+-0.15
+-0.10
+-0.05
+0.00
+0.05
+0.10
+Output Ripple (V)IOUT = 10 mA
+COUT = 4.7 µF, X7R Ceramic
+-2
+0
+2
+4
+6
+8
+10
+12
+14
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+Time (µs)
+Source Voltage (V)
+-0.30
+-0.25
+-0.20
+-0.15
+-0.10
+-0.05
+0.00
+0.05
+0.10
+Output Ripple (V)IOUT = 100 mA
+COUT = 4.7 µF, X7R Ceramic
+-0.05
+0.00
+0.05
+0.10
+0.15
+0.20
+0.25
+0.30
+0.35
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+Time (µs)
+Output Current (A)
+-0.12
+-0.10
+-0.08
+-0.06
+-0.04
+-0.02
+0.00
+0.02
+0.04
+Output Ripple (V)
+COUT = 4.7 µF, X7R Ceramic
+-0.20
+0.00
+0.20
+0.40
+0.60
+0.80
+1.00
+1.20
+1.40
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+200
+Time (µs)
+Output Current (A)
+-0.30
+-0.25
+-0.20
+-0.15
+-0.10
+-0.05
+0.00
+0.05
+0.10
+Output Ripple (V)
+COUT = 4.7 µF, X7R Ceramic
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+Time (s)
+Battery Voltage (V)
+0
+20
+40
+60
+80
+100
+120
+Charge Current (mA)
+MCP73831-2AC/IOT
+VDD = 5.2V
+RPROG = 10 kΩ 
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+0
+30
+60
+90
+120
+150
+180
+210
+240
+Time (s)
+Battery Voltage (V)
+0
+100
+200
+300
+400
+500
+600
+Charge Current (mA)
+MCP73831-2AC/IOT
+VDD = 5.2V
+RPROG = 2 kΩ 
+===PAGE 9===
+© 2005 Microchip Technology Inc. DS21984A-page 9
+MCP73831
+3.0 PIN DESCRIPTION
+The descriptions of the pins are listed in Table 3-1.
+TABLE 3-1: PIN FUNCTION TABLES
+3.1 Battery Management Input Supply 
+(VDD)
+A supply voltage of [V REG (typ.) + 0.3V] to 6V is
+recommended. Bypass to V SS with a minimum of
+4.7 μF.
+3.2 Battery Charge Control Output 
+(VBAT)
+Connect to positive terminal of battery. Drain terminal
+of internal P-channel MOSFET pass transistor. Bypass
+to VSS with a minimum of 4.7μF to ensure loop stability
+when the battery is disconnected.
+3.3 Charge Status Output (STAT)
+STAT is a tri-state logic output for connection to an LED
+for charge status indication. Alternatively, a pull-up
+resistor can be applied for interfacing to a host
+microcontroller.
+3.4 Battery Management 0V Reference 
+(VSS)
+Connect to negative terminal of battery and input
+supply.
+3.5 Current Regulation Set (PROG)
+Preconditioning, fast charge, and termination currents
+are scaled by placing a resistor from PROG to VSS.
+The charge management controller can be disabled by
+allowing the PROG input to float.
+Pin No.
+Symbol Function
+DFN SOT23-5
+14 V DD Battery Management Input Supply
+2— V DD Battery Management Input Supply
+33 V BAT Battery Charge Control Output
+4— V BAT Battery Charge Control Output
+5 1 STAT Charge Status Output
+62 V
+SS Battery Management 0V Reference
+7 — NC No Connection
+8 5 PROG Current Regulation Set and Charge Control Enable
+===PAGE 10===
+MCP73831
+DS21984A-page 10 © 2005 Microchip Technology Inc.
+4.0 DEVICE OVERVIEW
+The MCP73831 is a highly advanced linear charge
+management controller. Figure 4-1 depicts the
+operational flow algorithm from charge initiation to
+completion and automatic recharge.
+FIGURE 4-1: Flowchart.
+4.1 Under Voltage Lockout (UVLO)
+An internal under voltage lockout (UVLO) circuit
+monitors the input voltage and keeps the charger in
+Shutdown mode until the input supply rises above the
+UVLO threshold. The UVLO circuitry has a built in
+hysteresis of 100 mV.
+In the event a battery is present when the input power
+is applied, the input supply must rise 150 mV above
+the battery voltage before the MCP73831 becomes
+operational. 
+The UVLO circuit places the device in Shutdown mode
+if the input supply falls to within 50 mV of the battery
+voltage. Again, the input supply must rise to a level
+150 mV above the battery voltage before the
+MCP73831 becomes operational.
+The UVLO circuit is always active. At any time the
+input supply is below the UVLO threshold or within
+50 mV of the voltage at the V
+BAT pin, the MCP73831 is
+placed in a Shutdown mode.
+During any UVLO condition, the battery reverse
+discharge current shall be less than 2 μA.
+4.2 Charge Qualification
+For a charge cycle to begin, all UVLO conditions must
+be met and a battery or output load must be present. A
+charge current programming resistor must be
+connected from PROG to V
+SS. If the PROG pin is
+open or floating, the MCP73831 is disabled and the
+battery reverse discharge current is less than 2 μA. In
+this manner, the PROG pin acts as a charge enable
+and can be used as a manual shutdown.
+4.3 Preconditioning
+If the voltage at the VBAT pin is less than the precondi-
+tioning threshold, the MCP73831 enters a precondi-
+tioning or Trickle Charge mode. The preconditioning
+threshold is factory set. Refer to Section 1.0 “Electri-
+cal Characteristics”  for preconditioning threshold
+options and the Product Identification System for
+standard options. 
+In this mode, the MCP73831 supplies a percentage of
+the charge current (established with the value of the
+resistor connected to the PROG pin) to the battery.
+The percentage or ratio of the current is factory set.
+Refer to Section 1.0 “Electrical Characteristics” for
+preconditioning current options and the Product
+Identification System for standard options.
+When the voltage at the V
+BAT pin rises above the
+preconditioning threshold, the MCP73831 enters the
+Constant-Current or Fast Charge mode.
+4.4 Fast Charge Constant-Current 
+Mode
+During the Constant-Current mode, the programmed
+charge current is supplied to the battery or load. The
+charge current is established using a single resistor
+from PROG to V
+SS. Constant-Current mode is
+maintained until the voltage at the V BAT pin reaches
+the regulation voltage, VREG.
+SHUTDOWN MODE
+VDD < VUVLO
+VDD < VBAT
+or
+PROG > 200 kΩ 
+STAT = Hi-Z
+PRECONDITIONING 
+MODE 
+Charge Current = IPREG
+STAT = LOW
+FAST CHARGE 
+MODE 
+Charge Current = IREG
+STAT = LOW
+CONSTANT-VOLTAGE 
+MODE 
+Charge Voltage = VREG
+STAT = LOW
+VBAT < VPTH
+VBAT > VPTH
+VBAT = VREG
+VBAT < VRTH
+VBAT > VPTH
+CHARGE COMPLETE 
+MODE 
+No Charge Current
+STAT = HIGH
+IBAT < ITERM
+===PAGE 11===
+© 2005 Microchip Technology Inc. DS21984A-page 11
+MCP73831
+4.5 Constant-Voltage Mode
+When the voltage at the V BAT pin reaches the regula-
+tion voltage, VREG, constant voltage regulation begins.
+The regulation voltage is factory set to 4.2V, 4.35V,
+4.40V, or 4.50V with a tolerance of ±0.75%.
+4.6 Charge Termination
+The charge cycle is terminated when, during Constant-
+Voltage mode, the average charge current diminishes
+below a percentage of the programmed charge current
+(established with the value of the resistor connected to
+the PROG pin). A 1 ms filter time on the termination
+comparator ensures that transient load conditions do
+not result in premature charge cycle termination. The
+percentage or ratio of the current is factory set. Refer
+to Section 1.0 “Electrical Characteristics”  for
+charge termination current options and the Product
+Identification System for standard options.
+The charge current is latched off and the MCP73831
+enters a Charge Complete mode.
+4.7 Automatic Recharge
+The MCP73831 continuously monitors the voltage at
+the VBAT pin in the Charge Complete mode. If the volt-
+age drops below the recharge threshold, another
+charge cycle begins and current is once again
+supplied to the battery or load. The recharge threshold
+is factory set. Refer to Section 1.0 “Electrical Char-
+acteristics” for recharge threshold options and the
+Product Identification System for standard options.
+4.8 Thermal Regulation
+The MCP73831 limits the charge current based on the
+die temperature. The thermal regulation optimizes the
+charge cycle time while maintaining device reliability.
+Figure 4-2 depicts the thermal regulation for the
+MCP73831.
+FIGURE 4-2: Thermal Regulation.
+4.9 Thermal Shutdown
+The MCP73831 suspends charge if the die tempera-
+ture exceeds 150°C. Charging will resume when the
+die temperature has cooled by approximately 10°C.
+0
+75
+150
+225
+300
+375
+450
+525
+25
+35
+45
+55
+65
+75
+85
+95
+105
+115
+125
+135
+145
+155
+Junction Temperature (°C)
+Charge Current (mA)
+RPROG = 2 kΩ
+===PAGE 12===
+MCP73831
+DS21984A-page 12 © 2005 Microchip Technology Inc.
+5.0 DETAILED DESCRIPTION
+5.1 Analog Circuitry
+5.1.1 BATTERY MANAGEMENT INPUT 
+SUPPLY (VDD)
+The VDD input is the input supply to the MCP73831.
+The MCP73831 automatically enters a Power-Down
+mode if the voltage on the V
+DD input falls below the
+UVLO voltage (VSTOP). This feature prevents draining
+the battery pack when the VDD supply is not present.
+5.1.2 CURRENT REGULATION SET 
+(PROG)
+Fast charge current regulation can be scaled by placing
+a programming resistor (RPROG) from the PROG input
+to VSS. The program resistor and the charge current
+are calculated using the following equation:
+The preconditioning trickle charge current and the
+charge termination current are ratiometric to the fast
+charge current based on the selected device options.
+5.1.3 BATTERY CHARGE CONTROL 
+OUTPUT (VBAT)
+The battery charge control output is the drain terminal
+of an internal P-channel MOSFET. The MCP73831
+provides constant current and voltage regulation to the
+battery pack by controlling this MOSFET in the linear
+region. The battery charge control output should be
+connected to the positive terminal of the battery pack.
+5.2 Digital Circuitry
+5.2.1 STATUS INDICATOR (STAT)
+The charge status output has three different states:
+High (H), Low (L), and High-Impedance (Hi-Z). The
+charge status output can be used to illuminate 1, 2, or
+tricolor LEDs. Optionally, the charge status output can
+be used as an interface to a host microcontroller.
+Table 5-1 summarize the state of the status output
+during a charge cycle.
+5.2.2 DEVICE DISABLE (PROG)
+The current regulation set input pin (PROG) can be
+used to terminate a charge at any time during the
+charge cycle, as well as to initiate a charge cycle or
+initiate a recharge cycle.
+Placing a programming resistor from the PROG input to
+V
+SS enables the device. Allowing the PROG input to
+float or by applying a logic-high input signal, disables
+the device and terminates a charge cycle. When
+disabled, the device’s supply current is reduced to
+25 μA, typically.
+I
+REG
+1000V
+RPROG
+-----------------=
+Where:
+RPROG =k O h m s
+IREG = milliampere
+TABLE 5-1: STATUS OUTPUT 
+Charge Cycle State STAT1
+Shutdown Hi-Z
+No Battery Present Hi-Z
+Preconditioning L
+Constant-Current Fast Charge L
+Constant Voltage L
+Charge Complete – Standby H
+===PAGE 13===
+© 2005 Microchip Technology Inc. DS21984A-page 13
+MCP73831
+6.0 APPLICATIONS
+The MCP73831 is designed to operate in conjunction
+with a host microcontroller or in a stand-alone applica-
+tion. The MCP73831 provides the preferred charge
+algorithm for Lithium-Ion and Lithium-Polymer cells
+constant current followed by constant voltage.
+Figure 6-1 depicts a typical stand-alone application
+circuit, while Figures 6-2 and 6-3 depict the
+accompanying charge profile.
+FIGURE 6-1: Typical Application Circuit.
+FIGURE 6-2: Typical Charge Profile 
+(180 mAh Battery).
+FIGURE 6-3: Typical Charge Profile in 
+Thermal Regulation (1000 mAh Battery).
+6.1 Application Circuit Design 
+Due to the low efficiency of linear charging, the most
+important factors are thermal design and cost, which
+are a direct function of the input voltage, output current
+and thermal impedance between the battery charger
+and the ambient cooling air. The worst-case situation is
+when the device has transitioned from the
+Preconditioning mode to the Constant-Current mode.
+In this situation, the battery charger has to dissipate the
+maximum power. A trade-off must be made between
+the charge current, cost and thermal requirements of
+the charger.
+6.1.1 COMPONENT SELECTION
+Selection of the external components in Figure 6-1 is
+crucial to the integrity and reliability of the charging
+system. The following discussion is intended as a guide
+for the component selection process.
+6.1.1.1 Current Programming Resistor 
+(RPROG)
+The preferred fast charge current for Lithium-Ion cells
+is at the 1C rate, with an absolute maximum current at
+the 2C rate. For example, a 500 mAh battery pack has
+a preferred fast charge current of 500 mA. Charging at
+this rate provides the shortest charge cycle times
+without degradation to the battery pack performance or
+life.
+6.1.1.2 Thermal Considerations
+The worst-case power dissipation in the battery
+charger occurs when the input voltage is at the
+maximum and the device has transitioned from the
+Preconditioning mode to the Constant-Current mode.
+In this case, the power dissipation is:
+STAT
+VDD
+VSS
+PROG
+VBAT +
+-
+Single 
+Li-Ion 
+Cell
+4
+MCP73831
+5
+3
+1
+CIN
+Li-Ion Battery Charger
+2
+RPROG
+RLED COUT
+ 
+REGULATED 
+WALL CUBE LED
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+0
+20
+40
+60
+80
+100
+120
+140
+160
+180
+Time (S)
+Battery Voltage (V)
+0
+20
+40
+60
+80
+100
+120
+Charge Current (mA)
+MCP73831-2AC/IOT
+VDD = 5.2V
+RPROG = 10kΩ
+0.0
+1.0
+2.0
+3.0
+4.0
+5.0
+6.0
+0
+30
+60
+90
+120
+150
+180
+210
+240
+Time (S)
+Battery Voltage (V)
+0
+100
+200
+300
+400
+500
+600
+Charge Current (mA)
+MCP73831-2AC/IOT
+VDD = 5.2V
+RPROG = 2kΩ
+===PAGE 14===
+MCP73831
+DS21984A-page 14 © 2005 Microchip Technology Inc.
+Power dissipation with a 5V, ±10% input voltage source
+is:
+This power dissipation with the battery charger in the
+SOT23-5 package will cause thermal regulation to be
+entered as depicted in Figure 6-3. Alternatively, the
+2mm x 3mm DFN package could be utilized to reduce
+charge cycle times.
+6.1.1.3 External Capacitors
+The MCP73831 is stable with or without a battery load.
+In order to maintain good AC stability in the Constant-
+Voltage mode, a minimum capacitance of 4.7 μF is
+recommended to bypass the V
+BAT pin to V SS. This
+capacitance provides compensation when there is no
+battery load. In addition, the battery and interconnec-
+tions appear inductive at high frequencies. These
+elements are in the control feedback loop during
+Constant-Voltage mode. Therefore, the bypass capac-
+itance may be necessary to compensate for the
+inductive nature of the battery pack. 
+Virtually any good quality output filter capacitor can be
+used, independent of the capacitor’s minimum
+Effective Series Resistance (ESR) value. The actual
+value of the capacitor (and its associated ESR)
+depends on the output load current. A 4.7 μF ceramic,
+tantalum or aluminum electrolytic capacitor at the
+output is usually sufficient to ensure stability for output
+currents up to a 500 mA.
+6.1.1.4 Reverse-Blocking Protection
+The MCP73831 provides protection from a faulted or
+shorted input. Without the protection, a faulted or
+shorted input would discharge the battery pack through
+the body diode of the internal pass transistor.
+6.1.1.5 Charge Inhibit
+The current regulation set input pin (PROG) can be
+used to terminate a charge at any time during the
+charge cycle, as well as to initiate a charge cycle or
+initiate a recharge cycle.
+Placing a programming resistor from the PROG input to
+V
+SS enables the device. Allowing the PROG input to
+float or by applying a logic-high input signal, disables
+the device and terminates a charge cycle. When
+disabled, the device’s supply current is reduced to
+25 μA, typically.
+6.1.1.6 Charge Status Interface
+A status output provides information on the state of
+charge. The output can be used to illuminate external
+LEDs or interface to a host microcontroller. Refer to
+Table 5-1 for a summary of the state of the status
+output during a charge cycle.
+6.2 PCB Layout Issues
+For optimum voltage regulation, place the battery pack
+as close as possible to the device’s V
+BAT and VSS pins.
+This is recommended to minimize voltage drops along
+the high current-carrying PCB traces.
+If the PCB layout is used as a heatsink, adding many
+vias in the heatsink pad can help conduct more heat to
+the backplane of the PCB, thus reducing the maximum
+junction temperature. Figures 6-4 and 6-5 depict a
+typical layout with PCB heatsinking.
+FIGURE 6-4: Typical Layout (Top).
+FIGURE 6-5: Typical Layout (Bottom).
+PowerDissipation V DDMAX VPTHMIN–() IREGMAX×=
+Where:
+VDDMAX = the maximum input voltage
+IREGMAX = the maximum fast charge current
+VPTHMIN = the minimum transition threshold 
+voltage
+PowerDissipation 5.5V 2.7V –() 550mA× 1.54W==
+COUT
+LED
+RPROG
+CINMCP73831
+RLED
+VBAT VDD
+VSS
+VBAT
+VSS
+VDD
+===PAGE 15===
+© 2005 Microchip Technology Inc. DS21984A-page 15
+MCP73831
+7.0 PACKAGING INFORMATION
+7.1 Package Marking Information
+Legend: XX...X Customer-specific information
+Y Year code (last digit of calendar year)
+YY Year code (last 2 digits of calendar year)
+WW Week code (week of January 1 is week ‘01’)
+NNN Alphanumeric traceability code
+  Pb-free JEDEC designator for Matte Tin (Sn)
+* This package is Pb-free. The Pb-free JEDEC designator (     )
+can be found on the outer packaging for this package.
+Note: In the event the full Microchip part number cannot be marked on one line, it will
+be carried over to the next line, thus limiting the number of available
+characters for customer-specific information.
+3e
+3e
+5-Lead SOT-23 Example:
+XXNN KD25
+8-Lead DFN (2 mm x 3 mm) Example:
+XXX
+YWW
+NN
+AAE
+542
+25
+Device Code
+MCP73831T-2ACI/MC AAE
+MCP73831T-2ATI/MC AAF
+MCP73831T-2DCI/MC AAG
+MCP73831T-3ACI/MC AAH
+MCP73831T-4ADI/MC AAJ
+MCP73831T-5ACI/MC AAK
+Note: Applies to 8-Lead DFN
+Device Code
+MCP73831T-2ACI/OT KDNN
+MCP73831T-2ATI/OT KENN
+MCP73831T-2DCI/OT KFNN
+MCP73831T-3ACI/OT KGNN
+MCP73831T-4ADI/OT KHNN
+MCP73831T-5ACI/OT KJNN
+Note: Applies to 5-Lead SOT-23
+===PAGE 16===
+MCP73831
+DS21984A-page 16 © 2005 Microchip Technology Inc.
+8-Lead Plastic Dual-Flat, No-Lead Package (MC) 2x3x0.9 mm Body (DFN) – Saw Singulated
+L
+E2
+A3
+A1 A
+TOP VIEW
+D
+E
+EXPOSED
+PAD
+METAL
+D2
+BOTTOM VIEW
+2 1
+bp
+n
+(NOTE 3)
+EXPOSED
+TIE BAR
+PIN 1
+(NOTE 1)
+ID INDEX
+AREA
+(NOTE 2)
+CONFIGURATION
+CONTACT
+ALTERNATE
+DETAIL
+K
+3. Package may have one or more exposed tie bars at ends.
+BSC: Basic Dimension. Theoretically exact value shown without tolerances.
+REF: Reference Dimension, usually without tolerance, for information purposes only.
+JEDEC Equivalent MO-229 VCED-2
+See ASME Y14.5M
+See ASME Y14.5M
+MILLIMETERS*
+0.50 BSC
+2.00 BSC
+0.20 REF.
+3.00 BSC
+1. Pin 1 visual index feature may vary, but must be located within the hatched area.
+.039.035.031 0.80AOverall Height
+2. Exposed pad may vary according to die attach paddle size.
+* Controlling Parameter
+Contact Length §
+Notes:
+Contact Width
+Standoff
+Overall Width
+Overall Length
+Contact Thickness
+Exposed Pad Width
+Exposed Pad Length
+.010.008
+L
+b .012 0.20
+.001
+.008 REF.
+.079 BSC
+–
+–
+.118 BSC
+D
+.051
+.059
+D2
+E2
+E
+.000
+A3
+A1
+.069
+.075
+1.30**
+1.50**
+.002 0.00
+Dimension Limits
+Pitch
+Number of Pins
+INCHES
+.020 BSC
+MIN
+n
+e
+NOM
+Units
+8
+MAX MIN
+1.000.90
+0.25 0.30
+–
+–
+1.75
+1.90
+0.02 0.05
+8
+NOM MAX
+Contact-to-Exposed Pad §
+.012
+K
+.016 0.40 .020 0.30 0.50
+** Not within JEDEC parameters
+§ Significant Characteristic
+.008 – – 0.20 – –
+DWG No. C04-123
+Revised 09-12-05
+===PAGE 17===
+© 2005 Microchip Technology Inc. DS21984A-page 17
+MCP73831
+5-Lead Plastic Small Outline Transistor (OT) (SOT-23)
+1
+p
+D
+B
+n
+E
+E1
+L
+c
+β
+φ
+α
+A2A
+A1
+p1
+10501050bMold Draft Angle Bottom
+10501050aMold Draft Angle Top
+0.500.430.35.020.017.014BLead Width
+0.200.150.09.008.006.004cLead Thickness
+10501050fFoot Angle
+0.550.450.35.022.018.014LFoot Length
+3.102.952.80.122.116.110DOverall Length
+1.751.631.50.069.064.059E1Molded Package Width
+3.002.802.60.118.110.102EOverall Width
+0.150.080.00.006.003.000A1Standoff
+1.301.100.90.051.043.035A2Molded Package Thickness
+1.451.180.90.057.046.035AOverall Height
+1.90.075p1Outside lead pitch (basic)
+0.95.038pPitch
+55nNumber of Pins
+MAXNOMMINMAXNOMMINDimension Limits
+MILLIMETERSINCHES*Units
+Dimensions D and E1 do not include mold flash or protrusions.  Mold flash or protrusions shall not exceed .005" (0.127mm) per side.
+Notes:
+EIAJ Equivalent: SC-74A
+Drawing No. C04-091
+* Controlling Parameter
+Revised 09-12-05
+===PAGE 18===
+MCP73831
+DS21984A-page 18 © 2005 Microchip Technology Inc.
+NOTES:
+===PAGE 19===
+© 2005 Microchip Technology Inc. DS21984A-page 19
+MCP73831
+APPENDIX A: REVISION HISTORY
+Revision A (November 2005)
+ Original Release of this Document.
+===PAGE 20===
+MCP73831
+DS21984A-page 20 © 2005 Microchip Technology Inc.
+NOTES:
+===PAGE 21===
+© 2005 Microchip Technology Inc. DS21984A-page 21
+MCP73831
+PRODUCT IDENTIFICATION SYSTEM
+To order or obtain information, e.g., on pricing or delivery, refer to the factory or the listed sales office .
+   
+Device: MCP73831T: Single-Cell Charge Controller
+(Tape and Reel)
+Regulation
+Voltage:
+Code VREG
+2=
+3=
+4=
+5=
+4.20V
+4.35V
+4.40V
+4.50V
+Options: * Code I PREG/IREG VPTH/VREG ITERM/IREG VRTH/VREG
+AC
+AD
+AT
+DC
+10
+10
+10
+100
+66.5
+66.5
+71.5
+x
+7.5
+7.5
+20
+7.5
+96.5
+94
+94
+96.5
+* Consult Factory for Alternative Device Options
+Temperature 
+Range:
+I=  - 4 0 °C to +85°C (Industrial)
+Package: MC = Dual-Flat, No-Lead (2x3 mm body), 8-Lead
+OT = Small Outline Transistor (SOT23), 5-Lead
+Examples: *
+a) MCP73831T-2ACI/OT: Tape and Reel,
+4.20V VREG, Options AC, 5LD SOT23 Pkg
+b) MCP73831T-2ACI/OT: Tape and Reel,
+4.20V VREG, Options AC, 5LD SOT23 Pkg
+c) MCP73831T-2ACI/MC: Tape and Reel,
+4.20V VREG, Options AC, 8LD DFN Package
+d) MCP73831T-2ACI/MC: Tape and Reel,
+4.20V VREG, Options AC, 8LD DFN Package
+a) MCP73831T-2ATI/OT: Tape and Reel,
+4.20V VREG, Options AT, 5LD SOT23 Pkg
+b) MCP73831T-2ATI/OT: Tape and Reel,
+4.20V VREG, Options AT, 5LD SOT23 Pkg
+c) MCP73831T-2ATI/MC: Tape and Reel,
+4.20V VREG, Options AT, 8LD DFN Package
+d) MCP73831T-2ATI/MC: Tape and Reel,
+4.20V VREG, Options AT, 8LD DFN Package
+a) MCP73831T-2DCI/OT: Tape and Reel,
+4.20V VREG, Options DC, 5LD SOT23 Pkg
+b) MCP73831T-2DCI/OT: Tape and Reel,
+4.20V VREG, Options DC, 5LD SOT23 Pkg
+c) MCP73831T-2DCI/MC: Tape and Reel,
+4.20V VREG, Options DC, 8LD DFN Package
+d) MCP73831T-2DCI/MC: Tape and Reel,
+4.20V VREG, Options DC, 8LD DFN Package
+a) MCP73831T-3ACI/OT: Tape and Reel,
+4.35V VREG, Options AC, 5LD SOT23 Pkg
+b) MCP73831T-3ACI/OT: Tape and Reel,
+4.35V VREG, Options AC, 5LD SOT23 Pkg
+c) MCP73831T-3ACI/MC: Tape and Reel,
+4.35V VREG, Options AC, 8LD DFN Package
+d) MCP73831T-3ACI/MC: Tape and Reel,
+4.35V VREG, Options AC, 8LD DFN Package
+a) MCP73831T-4ADI/OT: Tape and Reel,
+4.40V VREG, Options AD, 5LD SOT23 Pkg
+b) MCP73831T-4ADI/OT: Tape and Reel,
+4.40V VREG, Options AD, 5LD SOT23 Pkg
+c) MCP73831T-4ADI/MC: Tape and Reel,
+4.40V VREG, Options AD, 8LD DFN Package
+d) MCP73831T-4ADI/MC: Tape and Reel,
+4.40V VREG, Options AD, 8LD DFN Package
+a) MCP73831T-5ACI/OT: Tape and Reel,
+4.50V VREG, Options AC, 5LD SOT23 Pkg
+b) MCP73831T-5ACI/OT: Tape and Reel,
+4.50V VREG, Options AC, 5LD SOT23 Pkg
+c) MCP73831T-5ACI/MC: Tape and Reel,
+4.50V VREG, Options AC, 8LD DFN Package
+d) MCP73831T-5ACI/MC: Tape and Reel,
+4.50V VREG, Options AC, 8LD DFN Package
+* Consult Factory for Alternate Device Options
+PART NO.
+Device
+X
+VREG
+/XX
+Package
+XX
+Options
+X
+Temperature
+Range
+–
+===PAGE 22===
+MCP73831
+DS21984A-page 22 © 2005 Microchip Technology Inc.
+NOTES:
+===PAGE 23===
+© 2005 Microchip Technology Inc. DS21984A-page 23
+Information contained in this publication regarding device
+applications and the like is provided only for your convenience
+and may be superseded by updates. It is your responsibility to
+ensure that your application m eets with your specifications.
+MICROCHIP MAKES NO REPRESENTATIONS OR WAR-
+RANTIES OF ANY KIND WHETHER EXPRESS OR IMPLIED,
+WRITTEN OR ORAL, STATUTORY OR OTHERWISE,
+RELATED TO THE INFORMATION, INCLUDING BUT NOT
+LIMITED TO ITS CONDITION, QUALITY, PERFORMANCE,
+MERCHANTABILITY OR FITNESS FOR PURPOSE .
+Microchip disclaims all liability arising from this information and
+its use. Use of Microchip’s products as critical components in
+life support systems is not authorized except with express
+written approval by Microchip. No licenses are conveyed,
+implicitly or otherwise, under any Microchip intellectual property
+rights.
+Trademarks
+The Microchip name and logo, the Microchip logo, Accuron, 
+dsPIC, KEELOQ, microID, MPLAB, PIC, PICmicro, 
+PICSTART, PRO MATE, PowerSmart, rfPIC, and 
+SmartShunt are registered trademarks of Microchip 
+Technology Incorporated in the U.S.A. and other countries.
+AmpLab, FilterLab, Migratable Memory, MXDEV, MXLAB, 
+PICMASTER, SEEVAL, SmartSensor and The Embedded 
+Control Solutions Company are registered trademarks of 
+Microchip Technology Incorporated in the U.S.A.
+Analog-for-the-Digital Age, Application Maestro, dsPICDEM, 
+dsPICDEM.net, dsPICworks, ECAN, ECONOMONITOR, 
+FanSense, FlexROM, fuzzyLAB, In-Circuit Serial 
+Programming, ICSP, ICEPIC, Linear Active Thermistor, 
+MPASM, MPLIB, MPLINK, MPSIM, PICkit, PICDEM, 
+PICDEM.net, PICLAB, PICtail, PowerCal, PowerInfo, 
+PowerMate, PowerTool, rfLAB, rfPICDEM, Select Mode, 
+Smart Serial, SmartTel, Total Endurance and WiperLock are 
+trademarks of Microchip Technology Incorporated in the 
+U.S.A. and other countries.
+SQTP is a service mark of Microchip Technology Incorporated 
+in the U.S.A.
+All other trademarks mentioned herein are property of their 
+respective companies.
+© 2005, Microchip Technology Incorporated, Printed in the 
+U.S.A., All Rights Reserved.
+ Printed on recycled paper.
+Note the following details of the code protection feature on Microchip devices:
+ Microchip products meet the specification cont ained in their particular Microchip Data Sheet.
+ Microchip believes that its family of products is one of the most secure families of its kind on the market today, when used i n the 
+intended manner and under normal conditions.
+ There are dishonest and possibly illegal methods used to breach the code protection feature. All of these methods, to our 
+knowledge, require using the Microchip products in a manner outside the operating specifications contained in Microchip’s Data 
+Sheets. Most likely, the person doing so is engaged in theft of intellectual property.
+ Microchip is willing to work with the customer who is concerned about the integrity of their code.
+ Neither Microchip nor any other semiconduc tor manufacturer can guarantee the security of their code. Code protection does not 
+mean that we are guaranteeing the product as “unbreakable.”
+Code protection is constantly evolving. We at Microchip are co mmitted to continuously improvin g the code protection features of  our
+products. Attempts to break Microchip’s code protection feature may be a violation of the Digital Millennium Copyright Act. If such acts
+allow unauthorized access to your software or other copyrighted work, you may have a right to sue for relief under that Act.
+Microchip received ISO/TS-16949:2002 quality system certification for 
+its worldwide headquarters, design and wafer fabrication facilities in 
+Chandler and Tempe, Arizona and Mountain View, California in 
+October 2003. The Company’s quality system processes and 
+procedures are for its PICmicro® 8-bit MCUs, KEELOQ® code hopping 
+devices, Serial EEPROMs, microperipherals, nonvolatile memory and 
+analog products. In addition, Microchip’s quality system for the design 
+and manufacture of development systems is ISO 9001:2000 certified.
+
+===PAGE 24===
+DS21984A-page 24 © 2005 Microchip Technology Inc.
+AMERICAS
+Corporate Office
+2355 West Chandler Blvd.
+Chandler, AZ  85224-6199
+Tel:  480-792-7200  
+Fax:  480-792-7277
+Technical Support: 
+http://support.microchip.com
+Web Address: 
+www.microchip.com
+Atlanta
+Alpharetta, GA 
+Tel: 770-640-0034  
+Fax: 770-640-0307
+Boston
+Westborough, MA  
+Tel: 774-760-0087 
+Fax: 774-760-0088
+Chicago
+Itasca, IL  
+Tel: 630-285-0071 
+Fax: 630-285-0075
+Dallas
+Addison, TX 
+Tel: 972-818-7423  
+Fax: 972-818-2924
+Detroit
+Farmington Hills, MI 
+Tel: 248-538-2250
+Fax: 248-538-2260
+Kokomo
+Kokomo, IN 
+Tel: 765-864-8360
+Fax: 765-864-8387
+Los Angeles
+Mission Viejo, CA 
+Tel: 949-462-9523  
+Fax: 949-462-9608
+San Jose
+Mountain View, CA 
+Tel: 650-215-1444
+Fax: 650-961-0286
+Toronto
+Mississauga, Ontario, 
+Canada
+Tel: 905-673-0699  
+Fax:  905-673-6509
+ASIA/PACIFIC
+Australia - Sydney
+Tel: 61-2-9868-6733 
+Fax: 61-2-9868-6755
+China - Beijing
+Tel: 86-10-8528-2100 
+Fax: 86-10-8528-2104
+China - Chengdu
+Tel: 86-28-8676-6200  
+Fax: 86-28-8676-6599
+China - Fuzhou
+Tel: 86-591-8750-3506  
+Fax: 86-591-8750-3521
+China - Hong Kong SAR
+Tel: 852-2401-1200  
+Fax: 852-2401-3431
+China - Qingdao
+Tel: 86-532-8502-7355
+Fax: 86-532-8502-7205
+China - Shanghai
+Tel: 86-21-5407-5533  
+Fax: 86-21-5407-5066
+China - Shenyang
+Tel: 86-24-2334-2829
+Fax: 86-24-2334-2393
+China - Shenzhen
+Tel: 86-755-8203-2660 
+Fax: 86-755-8203-1760
+China - Shunde
+Tel: 86-757-2839-5507 
+Fax: 86-757-2839-5571
+China - Wuhan
+Tel: 86-27-5980-5300
+Fax: 86-27-5980-5118
+China - Xian
+Tel: 86-29-8833-7250
+Fax: 86-29-8833-7256
+ASIA/PACIFIC
+India - Bangalore
+Tel: 91-80-2229-0061 
+Fax: 91-80-2229-0062
+India - New Delhi
+Tel: 91-11-5160-8631
+Fax: 91-11-5160-8632
+India - Pune
+Tel: 91-20-2566-1512
+Fax: 91-20-2566-1513
+Japan - Yokohama
+Tel: 81-45-471- 6166  
+Fax: 81-45-471-6122
+Korea - Gumi
+Tel: 82-54-473-4301
+Fax: 82-54-473-4302
+Korea - Seoul
+Tel: 82-2-554-7200
+Fax: 82-2-558-5932 or 
+82-2-558-5934
+Malaysia - Penang
+Tel: 60-4-646-8870
+Fax: 60-4-646-5086
+Philippines - Manila
+Tel: 63-2-634-9065
+Fax: 63-2-634-9069
+Singapore
+Tel:  65-6334-8870
+Fax: 65-6334-8850
+Taiwan - Hsin Chu
+Tel: 886-3-572-9526
+Fax: 886-3-572-6459
+Taiwan - Kaohsiung
+Tel: 886-7-536-4818
+Fax: 886-7-536-4803
+Taiwan - Taipei
+Tel: 886-2-2500-6610  
+Fax: 886-2-2508-0102
+Thailand - Bangkok
+Tel: 66-2-694-1351
+Fax: 66-2-694-1350
+EUROPE
+Austria - Wels
+Tel: 43-7242-2244-399
+Fax: 43-7242-2244-393
+Denmark - Copenhagen
+Tel: 45-4450-2828 
+Fax: 45-4485-2829
+France - Paris
+Tel: 33-1-69-53-63-20  
+Fax: 33-1-69-30-90-79
+Germany - Munich
+Tel: 49-89-627-144-0 
+Fax: 49-89-627-144-44
+Italy - Milan 
+Tel: 39-0331-742611  
+Fax: 39-0331-466781
+Netherlands - Drunen
+Tel: 31-416-690399 
+Fax: 31-416-690340
+Spain - Madrid
+Tel: 34-91-708-08-90
+Fax: 34-91-708-08-91
+UK - Wokingham
+Tel: 44-118-921-5869
+Fax: 44-118-921-5820
+WORLDWIDE SALES AND SERVICE
+10/31/05
