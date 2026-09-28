@@ -1,24 +1,25 @@
-"""Parametric keychain bumper for a square smartwatch body (open front + back).
+"""Keychain bumper for the HUAWEI Band 6 (open front + back).
 
 A frame that wraps only the 4 sides of the watch, with a small lip at the top
 and bottom edge so the watch snaps in flush and can't fall out. The screen
 and the heart-rate sensor stay uncovered. A ring on one side holds the keyring.
 
-EDIT THE WATCH_* VALUES TO YOUR MEASURED WATCH BODY (calipers, in mm),
-then run:  python3 watch_keychain_bumper.py
+Body size is Huawei's official spec: 43 x 25.4 x 10.99 mm. Corner radius and
+button position are estimates -- print the fit-test ring first (see README).
+Run:  python3 watch_keychain_bumper.py
 """
 import cadquery as cq
 
-# ---- Watch body (MEASURE THESE, without straps) -------------------------
-WATCH_W = 38.0        # left-right width
-WATCH_H = 44.0        # top-bottom height (along the strap direction)
-WATCH_T = 10.5        # thickness, glass to back (excluding sensor bump)
-WATCH_R = 8.0         # corner radius seen from the front
+# ---- HUAWEI Band 6 body, straps removed (official spec) -----------------
+WATCH_W = 25.4        # left-right width
+WATCH_H = 43.0        # top-bottom length (strap direction)
+WATCH_T = 10.99       # thickness, glass to back
+WATCH_R = 6.5         # corner radius seen from the front (estimate)
 
 # ---- Fit / frame ---------------------------------------------------------
-CLEAR = 0.20          # gap per side between watch and frame (PLA/PETG)
+CLEAR = 0.15          # gap per side (TPU: 0.1-0.15, PETG/PLA: 0.2)
 WALL = 1.8            # side wall thickness
-LIP = 1.2             # how far the front/back lips overhang the watch edge
+LIP = 1.0             # how far the front/back lips overhang the watch edge
 LIP_T = 1.0           # thickness of each lip
 
 # ---- Keyring loop --------------------------------------------------------
@@ -27,7 +28,7 @@ RING_ID = 5.0         # hole for the split ring
 RING_T = 3.5          # loop thickness (centered on the frame)
 
 # ---- Side button cut-out (right side). Set BTN_LEN = 0 to disable. -------
-BTN_LEN = 10.0        # length of the opening along the side
+BTN_LEN = 12.0        # length of the opening along the side (generous)
 BTN_OFFSET = 0.0      # shift of the opening from center (+ = toward top)
 
 # -------------------------------------------------------------------------
@@ -80,6 +81,11 @@ if __name__ == "__main__":
     here = os.path.dirname(os.path.abspath(__file__))
     cq.exporters.export(frame, os.path.join(here, "watch_keychain_bumper.step"))
     cq.exporters.export(frame, os.path.join(here, "watch_keychain_bumper.stl"),
+                        tolerance=0.02, angularTolerance=0.1)
+    # fit-test ring: a 3 mm slice of the side wall only (no lips, no loop).
+    # Print it first (~5 min) and slide it over the watch to check the fit.
+    ring = rrect(ow, oh, orad, 3).cut(rrect(iw, ih, ir, 3))
+    cq.exporters.export(ring, os.path.join(here, "fit_test_ring.stl"),
                         tolerance=0.02, angularTolerance=0.1)
     bb = frame.val().BoundingBox()
     print(f"outer size: {bb.xlen:.1f} x {bb.ylen:.1f} x {bb.zlen:.1f} mm")
