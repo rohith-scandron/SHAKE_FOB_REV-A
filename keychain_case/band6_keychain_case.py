@@ -46,6 +46,7 @@ RING_END = -1         # -1 = -Z end (opposite end to the original +Z loop)
 RING_OD = 9.0         # round eye outer diameter
 RING_ID = 4.6         # round hole diameter
 RING_GAP = 0.4        # solid between the case end face and the hole
+RING_BASE = 22.0      # width where the loop's gusset meets the end of the case
 RING_T = 3.5          # loop thickness from the back face
 
 # ----------------------------------------------------------------------------
@@ -93,12 +94,15 @@ body = body.cut(btn)
 
 # keyring loop on the RING_END end, flush with the back face: a round eye
 # pulled in close to the case so it sticks out only RING_GAP + RING_ID +
-# (RING_OD - RING_ID) / 2 past the end face. A straight neck as wide as the
-# eye joins it to the end block (buried 3 mm so it ties into the corners).
+# (RING_OD - RING_ID) / 2 past the end face. Its base is a wide gusset so
+# the pull goes into the solid end-block corners, not only the thin plate
+# in front of the tongue pocket.
 rc = END_L + RING_GAP + RING_ID / 2
 loop = (cq.Workplane("XZ").center(0, rc).circle(RING_OD / 2).extrude(-RING_T)
-        .union(cq.Workplane("XZ").center(0, (rc + END_L - 3.0) / 2)
-               .rect(RING_OD, rc - END_L + 3.0).extrude(-RING_T)))
+        .union(cq.Workplane("XZ")
+               .polyline([(-RING_BASE / 2, END_L - 0.5), (RING_BASE / 2, END_L - 0.5),
+                          (RING_OD / 2, rc), (-RING_OD / 2, rc)]).close()
+               .extrude(-RING_T)))
 loop = loop.cut(cq.Workplane("XZ").center(0, rc).circle(RING_ID / 2)
                 .extrude(-RING_T - 2).translate((0, -1, 0)))
 loop = loop.cut(rrect(cw, cl + 2 * POCKET_D, CAV_R, 12).translate((0, -1, 0)))
