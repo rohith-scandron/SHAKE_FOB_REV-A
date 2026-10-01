@@ -10,7 +10,7 @@ and a keyring loop. The screen and the heart-rate sensor stay uncovered.
 | `band6_keychain_case.py` | CadQuery source, all sizes at the top |
 | `preview.png` | renders |
 
-Outside size: **27.4 × 54.9 × 9.4 mm** (including the loop).
+Outside size: **27.4 × 56.7 × 9.4 mm** (including the loop).
 
 ## Fit
 
@@ -23,13 +23,11 @@ The rebuild matches the reference surface to a median deviation of 0.003 mm.
   hold the watch in the frame, so they are kept.
 
 What changed: the 22 mm spring-bar ears are removed, the ends are closed flat, the outer
-corners are rounded, and a keyring loop is added. The loop has a wide base so the pull
-goes into the solid end corners.
+corners are rounded, and a round keyring eye is added.
 
 The loop is on the end that hangs at the bottom when you look at the screen with the button
-on the left (`RING_END = -1`; set it to `1` to swap ends). It is a short tab with a
-7 × 3 mm sideways slot and sticks out only 5.4 mm past the case end. The slot fits a
-1.5–2 mm keyring wire; make `SLOT_H` larger for a thicker ring.
+on the left (`RING_END = -1`; set it to `1` to swap ends). It is a round eye (9 mm outside,
+4.6 mm hole) set close to the case, so it sticks out only 7.2 mm past the case end.
 
 ## Printing
 

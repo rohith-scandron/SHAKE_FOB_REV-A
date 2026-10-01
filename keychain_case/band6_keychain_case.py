@@ -43,12 +43,9 @@ CLEAR = 0.0           # extra gap per side; reference fit is 0 (snug)
 
 # ---- keyring loop ------------------------------------------------------------
 RING_END = -1         # -1 = -Z end (opposite end to the original +Z loop)
-SLOT_W = 7.0          # keyring slot width (along X)
-SLOT_H = 3.0          # keyring slot height (along Z): fits a 1.5-2 mm ring wire
-SLOT_GAP = 0.4        # solid between the case end face and the slot
-BAR = 2.0             # outer bar the ring pulls on
-LOOP_W = 16.0         # loop width along the case end
-LOOP_R = 2.0          # outer corner radius of the loop
+RING_OD = 9.0         # round eye outer diameter
+RING_ID = 4.6         # round hole diameter
+RING_GAP = 0.4        # solid between the case end face and the hole
 RING_T = 3.5          # loop thickness from the back face
 
 # ----------------------------------------------------------------------------
@@ -94,17 +91,16 @@ btn = (cq.Workplane("YZ").sketch()
        .translate((cw / 2 + WALL / 2, sum(BTN_Y) / 2, sum(BTN_Z) / 2)))
 body = body.cut(btn)
 
-# keyring loop on the RING_END end, flush with the back face: a short tab
-# with a sideways slot, so it sticks out only SLOT_GAP + SLOT_H + BAR past
-# the end face. The tab is wide so the pull goes into the solid end-block
-# corners, not only the thin plate in front of the tongue pocket.
-reach = SLOT_GAP + SLOT_H + BAR
-tab_l = reach + 3.0                       # buried 3 mm in the end block
-loop = (rrect(LOOP_W, tab_l, LOOP_R, RING_T)
-        .translate((0, 0, END_L + reach - tab_l / 2)))
-slot = (cq.Workplane("XZ").center(0, END_L + SLOT_GAP + SLOT_H / 2)
-        .slot2D(SLOT_W, SLOT_H).extrude(-RING_T - 2).translate((0, -1, 0)))
-loop = loop.cut(slot)
+# keyring loop on the RING_END end, flush with the back face: a round eye
+# pulled in close to the case so it sticks out only RING_GAP + RING_ID +
+# (RING_OD - RING_ID) / 2 past the end face. A straight neck as wide as the
+# eye joins it to the end block (buried 3 mm so it ties into the corners).
+rc = END_L + RING_GAP + RING_ID / 2
+loop = (cq.Workplane("XZ").center(0, rc).circle(RING_OD / 2).extrude(-RING_T)
+        .union(cq.Workplane("XZ").center(0, (rc + END_L - 3.0) / 2)
+               .rect(RING_OD, rc - END_L + 3.0).extrude(-RING_T)))
+loop = loop.cut(cq.Workplane("XZ").center(0, rc).circle(RING_ID / 2)
+                .extrude(-RING_T - 2).translate((0, -1, 0)))
 loop = loop.cut(rrect(cw, cl + 2 * POCKET_D, CAV_R, 12).translate((0, -1, 0)))
 if RING_END < 0:
     loop = loop.mirror("XY")
