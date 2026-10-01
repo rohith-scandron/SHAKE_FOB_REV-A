@@ -41,11 +41,15 @@ BTN_R = 1.0
 
 CLEAR = 0.0           # extra gap per side; reference fit is 0 (snug)
 
-# ---- keyring loop (+Z end) -------------------------------------------------
-RING_OD = 9.0
-RING_ID = 4.6
+# ---- keyring loop ------------------------------------------------------------
+RING_END = -1         # -1 = -Z end (opposite end to the original +Z loop)
+SLOT_W = 7.0          # keyring slot width (along X)
+SLOT_H = 3.0          # keyring slot height (along Z): fits a 1.5-2 mm ring wire
+SLOT_GAP = 0.4        # solid between the case end face and the slot
+BAR = 2.0             # outer bar the ring pulls on
+LOOP_W = 16.0         # loop width along the case end
+LOOP_R = 2.0          # outer corner radius of the loop
 RING_T = 3.5          # loop thickness from the back face
-RING_BASE = 22.0      # width where the loop meets the end of the case
 
 # ----------------------------------------------------------------------------
 cw, cl = CAV_W + 2 * CLEAR, CAV_L + 2 * CLEAR
@@ -90,18 +94,20 @@ btn = (cq.Workplane("YZ").sketch()
        .translate((cw / 2 + WALL / 2, sum(BTN_Y) / 2, sum(BTN_Z) / 2)))
 body = body.cut(btn)
 
-# keyring loop on the +Z end, flush with the back face. Its base is a wide
-# gusset so the pull goes into the solid end-block corners, not only the
-# thin plate in front of the tongue pocket.
-rc = END_L + RING_OD / 2 + 1.0
-loop = (cq.Workplane("XZ").center(0, rc).circle(RING_OD / 2).extrude(-RING_T)
-        .union(cq.Workplane("XZ")
-               .polyline([(-RING_BASE / 2, END_L - 0.5), (RING_BASE / 2, END_L - 0.5),
-                          (RING_OD / 2, rc), (-RING_OD / 2, rc)]).close()
-               .extrude(-RING_T)))
-loop = loop.cut(cq.Workplane("XZ").center(0, rc).circle(RING_ID / 2)
-                .extrude(-RING_T - 2).translate((0, -1, 0)))
+# keyring loop on the RING_END end, flush with the back face: a short tab
+# with a sideways slot, so it sticks out only SLOT_GAP + SLOT_H + BAR past
+# the end face. The tab is wide so the pull goes into the solid end-block
+# corners, not only the thin plate in front of the tongue pocket.
+reach = SLOT_GAP + SLOT_H + BAR
+tab_l = reach + 3.0                       # buried 3 mm in the end block
+loop = (rrect(LOOP_W, tab_l, LOOP_R, RING_T)
+        .translate((0, 0, END_L + reach - tab_l / 2)))
+slot = (cq.Workplane("XZ").center(0, END_L + SLOT_GAP + SLOT_H / 2)
+        .slot2D(SLOT_W, SLOT_H).extrude(-RING_T - 2).translate((0, -1, 0)))
+loop = loop.cut(slot)
 loop = loop.cut(rrect(cw, cl + 2 * POCKET_D, CAV_R, 12).translate((0, -1, 0)))
+if RING_END < 0:
+    loop = loop.mirror("XY")
 case = body.union(loop)
 
 if __name__ == "__main__":
