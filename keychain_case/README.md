@@ -22,8 +22,8 @@ The rebuild matches the reference surface to a median deviation of 0.003 mm.
 - the two internal tongues that clip into the watch's own strap slots. These are what
   hold the watch in the frame, so they are kept.
 
-What changed: the 22 mm spring-bar ears are removed, the ends are closed flat, the outer
-corners are rounded, and a round keyring eye is added. The eye has a wide triangular base
+What changed: the 22 mm spring-bar ears are removed, the ends are closed flat, the four outer
+corners are rounded (5 mm radius), and a round keyring eye is added. The eye has a wide triangular base
 so the pull goes into the solid end corners.
 
 The loop is on the end that hangs at the bottom when you look at the screen with the button

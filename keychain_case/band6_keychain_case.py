@@ -24,7 +24,7 @@ TOP = [               # screen-side edge height vs |z| (flat 9.4 mid-section)
     (19.2, 8.40), (20.5, 7.95), (21.7, 7.40), (22.7, 6.85), (23.7, 6.20),
     (END_L, 5.50)]
 CAV_R = 1.2           # cavity corner radius (front view)
-OUT_R = 2.0           # outer corner radius (front view)
+OUT_R = 5.0           # outer corner radius (front view); keeps ~1 mm wall at the corners
 
 # strap-slot tongue at each end: pocket under it + two small latch notches
 POCKET_W = 14.70      # pocket width (|x| < 7.35)
@@ -46,7 +46,7 @@ RING_END = -1         # -1 = -Z end (opposite end to the original +Z loop)
 RING_OD = 9.0         # round eye outer diameter
 RING_ID = 4.6         # round hole diameter
 RING_GAP = 0.4        # solid between the case end face and the hole
-RING_BASE = 22.0      # width where the loop's gusset meets the end of the case
+RING_BASE = 17.0      # gusset width at the case end (stays on the flat part between the rounded corners)
 RING_T = 3.5          # loop thickness from the back face
 
 # ----------------------------------------------------------------------------
