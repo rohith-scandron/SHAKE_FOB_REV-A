@@ -9,7 +9,8 @@ The 22 mm spring-bar ears are removed and the ends closed flat.
 This derivative is shared under the same CC BY-SA license.
 
 Axes: X = width, Y = thickness (Y=0 is the flat wrist/back side -> print
-this face down, no supports), Z = length.
+this face down, no supports), Z = length. The fit geometry below is given
+from the watch's back face, which ends up LIP_T above Y=0 (on the ledge).
 Run:  python3 band6_keychain_case.py
 """
 import cadquery as cq
@@ -34,12 +35,22 @@ NOTCH_X = (6.50, 8.50)
 NOTCH_Y = (4.62, 6.62)
 NOTCH_D = 0.50
 
-# side button opening (+X wall)
+# side button opening. BTN_SIDE = 1: +X wall, which is to the RIGHT when you
+# look at the screen with the keyring at the top. -1 moves it to the other
+# wall (the watch then sits rotated 180 degrees, so Z is mirrored too).
+BTN_SIDE = 1
 BTN_Z = (-5.00, 6.13)
 BTN_Y = (1.87, 7.56)
 BTN_R = 1.0
 
 CLEAR = 0.0           # extra gap per side; reference fit is 0 (snug)
+
+# back ledge: an inward lip under the watch's back edge so the watch stops in
+# the right place when pushed in from the screen side and can't fall out the
+# back. It is added BELOW the old back face, so the watch still sits at the
+# same height and the tongues still line up with its strap slots.
+LIP_W = 0.8           # how far the lip sticks inward from the cavity wall
+LIP_T = 0.8           # lip thickness (case gets this much thicker)
 
 # ---- keyring loop ------------------------------------------------------------
 RING_END = -1         # -1 = -Z end (opposite end to the original +Z loop)
@@ -47,7 +58,7 @@ RING_OD = 9.0         # round eye outer diameter
 RING_ID = 4.6         # round hole diameter
 RING_GAP = 0.4        # solid between the case end face and the hole
 RING_BASE = 17.0      # gusset width at the case end (stays on the flat part between the rounded corners)
-RING_T = 3.5          # loop thickness from the back face
+RING_T = 3.5          # loop thickness above the ledge layer
 
 # ----------------------------------------------------------------------------
 cw, cl = CAV_W + 2 * CLEAR, CAV_L + 2 * CLEAR
@@ -85,12 +96,21 @@ for s in (1, -1):
                         .translate((nx, sum(NOTCH_Y) / 2,
                                     zin + s * (NOTCH_D - 0.2) / 2)))
 
-# button opening in the +X wall
+# button opening in the BTN_SIDE wall
 btn = (cq.Workplane("YZ").sketch()
        .rect(BTN_Y[1] - BTN_Y[0], BTN_Z[1] - BTN_Z[0]).vertices().fillet(BTN_R)
        .finalize().extrude(3 * WALL, both=True)
-       .translate((cw / 2 + WALL / 2, sum(BTN_Y) / 2, sum(BTN_Z) / 2)))
+       .translate((BTN_SIDE * (cw / 2 + WALL / 2), sum(BTN_Y) / 2,
+                   BTN_SIDE * sum(BTN_Z) / 2)))
 body = body.cut(btn)
+
+# back ledge: a ring the shape of the case footprint, from Y=-LIP_T to 0,
+# with an opening LIP_W smaller than the cavity on every side
+lip = (rrect(ow, 2 * END_L, OUT_R, LIP_T)
+       .cut(rrect(cw - 2 * LIP_W, cl - 2 * LIP_W, CAV_R, LIP_T + 2)
+            .translate((0, -1, 0)))
+       .translate((0, -LIP_T, 0)))
+body = body.union(lip)
 
 # keyring loop on the RING_END end, flush with the back face: a round eye
 # pulled in close to the case so it sticks out only RING_GAP + RING_ID +
@@ -108,7 +128,9 @@ loop = loop.cut(cq.Workplane("XZ").center(0, rc).circle(RING_ID / 2)
 loop = loop.cut(rrect(cw, cl + 2 * POCKET_D, CAV_R, 12).translate((0, -1, 0)))
 if RING_END < 0:
     loop = loop.mirror("XY")
-case = body.union(loop)
+loop = loop.union(loop.faces("<Y").wires().toPending().extrude(LIP_T))
+# shift up so the new back face (bottom of the ledge) is Y=0 again
+case = body.union(loop).translate((0, LIP_T, 0))
 
 if __name__ == "__main__":
     import os
