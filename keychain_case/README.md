@@ -30,7 +30,8 @@ With the keyring at the top and the screen facing you, the button opening is on 
 (`BTN_SIDE = 1`; `-1` moves it to the other wall, `RING_END` swaps the loop's end). It is a round eye (9 mm outside,
 4.6 mm hole) set close to the case, so it sticks out only 7.2 mm past the case end.
 
-A 0.8 mm inward ledge runs round the back edge (`LIP_W`, `LIP_T`). The watch is pushed in
+A 0.8 mm inward ledge runs along the back edge of the two long sides (`LIP_W`, `LIP_T`).
+The short ends have no ledge, so the watch can be tilted in end first past the tongues. The watch is pushed in
 from the screen side and stops on it, and it can't fall out the back. The ledge is added
 under the old back face, so the watch sits at the same height and the tongues still line
 up with its strap slots; the case is 0.8 mm thicker. The heart-rate sensor stays uncovered.

@@ -45,7 +45,7 @@ BTN_R = 1.0
 
 CLEAR = 0.0           # extra gap per side; reference fit is 0 (snug)
 
-# back ledge: an inward lip under the watch's back edge so the watch stops in
+# back ledge (long sides only): an inward lip under the watch's back edge so the watch stops in
 # the right place when pushed in from the screen side and can't fall out the
 # back. It is added BELOW the old back face, so the watch still sits at the
 # same height and the tongues still line up with its strap slots.
@@ -104,13 +104,17 @@ btn = (cq.Workplane("YZ").sketch()
                    BTN_SIDE * sum(BTN_Z) / 2)))
 body = body.cut(btn)
 
-# back ledge: a ring the shape of the case footprint, from Y=-LIP_T to 0,
-# with an opening LIP_W smaller than the cavity on every side
-lip = (rrect(ow, 2 * END_L, OUT_R, LIP_T)
-       .cut(rrect(cw - 2 * LIP_W, cl - 2 * LIP_W, CAV_R, LIP_T + 2)
-            .translate((0, -1, 0)))
-       .translate((0, -LIP_T, 0)))
-body = body.union(lip)
+# back ledge, from Y=-LIP_T to 0: the case footprint under the walls, plus a
+# lip LIP_W wide on the two long sides only. The short ends (top and bottom)
+# have no lip, so the watch can be tilted in end first past the tongues.
+lip = rrect(ow, 2 * END_L, OUT_R, LIP_T).cut(
+    rrect(cw, cl, CAV_R, LIP_T + 2).translate((0, -1, 0)))
+for sx in (1, -1):
+    lip = lip.union(cq.Workplane("XY")
+                    .box(LIP_W + WALL, LIP_T, cl - 2 * CAV_R)
+                    .translate((sx * (cw / 2 - LIP_W + (LIP_W + WALL) / 2),
+                                LIP_T / 2, 0)))
+body = body.union(lip.translate((0, -LIP_T, 0)))
 
 # keyring loop on the RING_END end, flush with the back face: a round eye
 # pulled in close to the case so it sticks out only RING_GAP + RING_ID +
